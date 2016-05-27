@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+    <title>2.0版本内容解读及攻防推导杂谈</title>
+    <link href="../bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+<style>
+    body {
+        background: #e0e0e0;
+    }
+
+    .ttd {
+        background: #EED8AE;
+    }
+
+    td {
+        text-align: center;
+        background: #fff;
+    }
+
+    th {
+        text-align: center;
+    }
+
+    .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+        border: 1px solid #080808;
+    }
+
+    ul {
+        list-style: none;
+        padding: 8px;
+        text-align: center;
+    }
+
+    ul li {
+        float: left;
+        text-align: center;
+        list-style: none;
+        margin: 3px;
+    }
+
+    .life-div {
+        background: #956336;
+        border: 1px solid #431C04;
+        border-radius: 6px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        line-height: 24px;
+        color: #fff;
+    }
+
+    h3 {
+        margin-bottom: 0.3em;
+        border-bottom: 1px solid #d75330;
+        border-left: 0.4em solid #d75330;
+        padding-left: 0.5em;
+        color: #555;
+        margin-top: 5px;
+        height: 20px;
+        line-height: 20px;
+        clear: both;
+    }
+</style>
+<body style="color:#000;padding:10px;">
+<div id="mw-content-text" lang="zh-CN" dir="ltr" class="mw-content-ltr">
+    <p><br></p>
+<h2><span class="mw-headline" id=".E5.89.8D.E8.A8.80">前言</span></h2>
+<p>小小军团“2”时代来临。除了增英雄，添装备，修BUG的老三样外，具有跨时代意义的GVE功能也在此版本横空出世。</p>
+<p>下面切入正题。</p>
+<p><br></p>
+<h2><span class="mw-headline" id=".E4.B8.80.E3.80.81GVE.E5.8A.9F.E8.83.BD.E7.AE.80.E8.AF.BB">一、GVE功能简读</span></h2>
+<p>虽然在难度、军功上限、奖励等问题上还有极大的完善空间，但不可否认，GVE功能的加入一定程度上改善了小小军团互动性不足的缺陷，希望TG能在此基础上开发出更多新玩法。</p>
+<p><br></p>
+<h2><span class="mw-headline" id=".E4.BA.8C.E3.80.81.E6.96.B0.E8.8B.B1.E9.9B.84.E8.A7.A3.E6.9E.90">二、新英雄解析</span></h2>
+<p>1.奶泉—<a title="曼托">曼托</a>。唯一具备主力面相的新增英雄。技能为每12S在自身300码范围选择己方部队“受伤最重”的地方放置一个80码大小的治疗泉（不会移动），每秒为至多15个单位回复X血量，持续Y秒。经过实测，可以初步得出以下结论：</p>
+<ul>
+ <li>和苍蝇不同，曼托的技能只要到达释放时间节点且未被昏迷沉默，即使在移动中也会准时释放。</li>
+ <li>通过合理布位，将闪避弩、反射盾、双矛和屋大维等收益更高方阵纳入曼托技能范围内的可行性是很高的。</li>
+ <li>作为技能成长型英雄，曼托应装备全套高攻为主高血为辅的五星装备，舍弃幸运闪避和护甲属性。预计后期曼托每秒回复量在1600点左右，持续8S。由于前11S属于技能CD期，所以将奶泉放置于最后一排慢慢走位也不会有明显损失。</li>
+</ul>
+<p><br></p>
+<ul>
+ <li> <b>解读：</b>曼托相比奶妈而言，最大的优势在于技能稳定可控，使用方法推荐以下三种。
+  <ul>
+   <li> <b>第一种：</b>作为阿三双矛后面的第四人，不仅可以起到保护尖兵的作用，自身优秀的部队属性又不会浪费阿三的buff。</li>
+   <li> <b>第二种：</b>布位于闪避弩后方进行精准保护，使闪避弩吸收平砍伤害的能力得到极大提升。不过这种布阵在防守时极易被突破。</li>
+   <li> <b>第三种：</b>布位于能覆盖闪避弩和前排反射or屋大维的位置，以实现这些的双保险。</li>
+  </ul></li>
+</ul>
+<p><br>奶泉的缺点也比较突出。一是等级。作为新英雄，多数玩家的训练书很难确保能将他直接喂到100级以上（需要500本左右），这将导致其兵种无法直接进阶，且英雄技能等级将在较长一段时间内无法达到理想状态，降低了实效；其次，奶泉的三围属性一般，特别是幸运值较低，不适合佩戴统御项链，所以部队攻击项链是唯一的选择；最后，战斗节奏的不断加快使得奶泉在PVP中的表现并不十分理想，仅在部分PVE战斗中可以和闪避弩组成强力的肉盾永动机。</p>
+<p><br></p>
+<p>2.红脸—<a title="帕里斯">帕里斯</a>。技能为裁决之箭，满级后陷阱范围内的敌方单位在攻击时将造成10%自身攻击力的伤害，陷阱持续10S。</p>
+<p><b>解读：</b>官方表示，这是一名远程反伤英雄，具有极强的“群伤能力”。就像奶泉要和奶妈比较相同，猴子由于兵种和定位因素，所以比较对象肯定是三星弓。后期装备精良的三星弓每次箭雨的理论总伤害为5*15*2000=15w。而按照最高攻的矛兵和魔法兵的攻击力均值3500计算，英雄均值7500计算，假定每次裁决影响3个方阵（真不少了），也就是3个英雄+75个魔法兵，每次裁决所造成的伤害总值为（750*3+350*75）*6=17w1。</p>
+<p><br>按照上述推算，考虑到裁决技能的CD为坑爹的10S，且技能释放点和影响数量存在很强的不稳定性，故而判定猴子帕里斯将成为第三位四星弓手派遣任务专员。</p>
+<p><br>3.女火—<a title="玛莉·瑞德">玛莉·瑞德</a>。技能伤害和CD略优于<a title="爱德华">爱德华</a>，幸运属性和附加属性价值则较爱德华差距较大。1.85版本由于技能CD机制和基佬一样存在bug，导致电脑的女火稳定发飙，可惜这个bug在玩家获得女火之前就已经修复了。两个字总结概括：废柴。</p>
+<p><br></p>
+<p>4.野蛮女—<a title="佩蒂弗">佩蒂弗</a>。之前的帖子非常详尽的解读了为什么佩蒂弗是废柴，不再赘述。</p>
+<p><br></p>
+<h2><span class="mw-headline" id=".E4.B8.89.E3.80.81Bug.E4.BF.AE.E5.A4.8D">三、Bug修复</span></h2>
+<p>1.修复了喀耳刻技能描述与实际效果不符的问题。不知道具体是什么不符，不过不影响复制法的使用。</p>
+<p>2.修复了狼骑兵晕眩会覆盖光环晕眩的问题。意思是：狼骑兵攻击时有20%概率眩晕目标1S，但坎特洛的眩晕光环则是敌方攻击时有概率眩晕2S，当敌方由于光环效果而眩晕时遭到了狼骑眩晕效果影响，则移除光环眩晕效果。很绕口是吧...举个栗子：敌方一个步兵攻击我方狼骑兵时被眩晕光环影响开始昏迷2秒，但仅过0.1S后，我方狼骑兵的攻击特性触发，导致昏迷时间重置为1S，等于损失了0.9S的眩晕。如果再不明白，就单纯的理解为是个有利于玩家的bug修复吧。</p>
+<p>3.修复了眩晕弹英文描述错误。不重要。</p>
+<p>4.修复了英雄冒险任务的bug。也不重要。</p>
+<p>5.修复了部分文字描述过长的问题。完全不重要。</p>
+<p><br></p>
+<h2><span class="mw-headline" id=".E5.9B.9B.E3.80.81.E6.94.BB.E9.98.B2.E6.8E.A8.E5.AF.BC.E6.9D.82.E8.B0.88">四、攻防推导杂谈</span></h2>
+<p><b>伤害计算公式：</b><font color="red">伤害值=（攻击力-防御力）/5</font>，而暴击伤害为普通伤害的两倍，也就是在此公式的结果上乘以2。</p>
+<p><br>1.攻防数值转换比例。通过多项实测数据，我们可以确切得出：每5点攻击力将造成1点平砍伤害，每78点护甲值将减免1%暴击伤害。由此玩家可以直接算出自己的英雄或部队的攻击力和防御力产生的确切收益，量化装备属性价值。</p>
+<p><br>2.极防概念。虽然极限防御已经伴随兵种进阶的出现而失效，但仍存在“相对极防”。以白盾为例，目前白盾的极限防御数值接近2600，套入公式后可以得出结论：<font color="blue">攻击力低于2650的部队平砍白盾只能造成10点基础伤害。</font>而400兵等无项链支持下能明显高于这一临界点的兵种只有矛兵、战斗法师、帕提亚弓骑、重火枪和野蛮法师，可见高防白盾的硬度仍是十分可观的。PS：由于TG采取了“至少10点”的基础伤害机制，所以哪怕只有1点攻击力，也会对高防白盾造成和2600点攻击力相同的10点伤害。</p>
+<p><br>3.<a title="阿喀琉斯">黑矛</a>与<a title="列奥尼达斯">斯巴达</a>。后期神装黑矛应该具有9300+攻击力和80%以上暴击率，斯巴达则应具有9500+攻击力和85%以上暴击率，从面板看，黑矛的数据明显要劣势一些。通过数据推导，假定分别攻击1800防御值的目标时，技能触发前的黑矛将分别造成1460和2920点伤害；技能触发后的黑矛将分别造成6920和13840点伤害；斯巴达则分别造成1500点和6750点伤害。当然，还得考虑到黑矛的百发百中和斯巴达攻击被闪避的因素...</p>
+<p><br>5.火枪进阶数据。重火枪和投弹手均在1.91版本获得强化，但是具体实效由于没有合适的标准而存在较大争议。在此对具体数值进行推算，还原两者在实战中的造伤能力究竟如何。</p>
+<p>测试目标为拥有600护甲（400级前排）的无克制加成效果目标，测试双方为2960攻的重火和2588攻的满级投弹手。在无昏迷支撑下，重火每次攻击伤害为472点，有昏迷支撑为944点；投弹手每次攻击直接造成伤害为398点，4个15%溅射造成的伤害为239点，共计637点。通过计算我们可以得出：当重火枪每3次普通攻击中有1次受到昏迷加成影响，则数据和投弹手持平，也就是说，重火特性覆盖率能达到33%的情况下，重火优于投弹手，反之则投弹手数据更优。</p>
+<p><br>6.最后聊聊<a title="特里姆">苍蝇</a>。1.92版本中，TG悄无声息的加入一条隐藏改动：苍蝇将可以被绿帽标记。绿帽和苍蝇的关系愈发像獴与蛇一样，前者为后者而生，同时也是后者的天敌。现在我们经常会发现，绿帽对英雄伤害时常爆表，究其原因是由于角斗士项链的秒杀与标记后所带来的恐怖易伤。秒杀属于概率性事件，而且绿帽转火苍蝇也会存在一定延迟，所以标记这一高概率触发因素就能很好的弥补角斗士项链所带来的不足。而12级标记会使目标防御值降低140%（没错，是负的，所以防御越高越惨），被标记后，小苍蝇的4200防变成“-5880防”带入公式后不难明白，被标记后的苍蝇有多么脆弱。</p>
+<!-- NewPP limit reportCPU time usage: 0.015 secondsReal time usage: 0.021 secondsPreprocessor visited node count: 29/1000000Preprocessor generated node count: 50/1000000Post‐expand include size: 201/2097152 bytesTemplate argument size: 0/2097152 bytesHighest expansion depth: 2/40Expensive parser function count: 0/100-->
+<!-- Transclusion expansion time report (%,ms,calls,template)100.00%    5.813      1 - -total100.00%    5.813      1 - 模板:首页-->
+<!-- Saved in parser cache with key miniwarriorswiki:pcache:idhash:1884-0!*!0!!zh-cn!*!* and timestamp 20160418053024 and revision id 5765 -->
+<input type="hidden" name="mytoken" id="mytoken" value="e37700e5685a0de366884db2906578af">
+<input type="hidden" name="pageId" id="pageId" value="546034">
+</div>
+</body>
+</html>

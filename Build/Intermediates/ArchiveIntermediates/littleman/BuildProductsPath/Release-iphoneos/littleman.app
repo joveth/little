@@ -1,0 +1,1 @@
+/Users/shuwei/works/teme/littleman/Build/Intermediates/ArchiveIntermediates/littleman/InstallationBuildProductsLocation/Applications/littleman.app

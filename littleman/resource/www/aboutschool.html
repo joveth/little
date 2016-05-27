@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+    <title>学院</title>
+    <link href="bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+
+<body style="color:#000;padding:10px;">
+<article class="markdown-body entry-content" itemprop="mainContentOfPage">
+    <div id="mw-content-text" lang="zh-CN" dir="ltr" class="mw-content-ltr">
+        <img src="school.jpg" style="width: 100%;" />
+        <ul><li>战斗中使用士气，给敌人予以打击，治疗我方部队英雄，或者召唤特殊军团。</li>
+            <li>有手动自动两种技能施放选择。英雄死亡时或部分英雄的技能可增加士气。</li>
+            <li>英雄死亡时增加3点士气，20人全灭时增加60点士气。</li></ul>
+        <p><br>
+        </p>
+
+        <h2><span class="mw-headline" id=".E5.A3.AB.E6.B0.94">士气</span></h2>
+        <ul><li>点击上部士气槽旁边的+，可提升士气值上限。</li>
+            <li>最大值为64。</li></ul>
+        <p><br>
+        </p>
+        <table class="table table-bordered" style=" text-align:center">
+            <tbody><tr>
+                <th style="background-color:#BA865A"><b>上限士气</b>
+                </th>
+                <th style="background-color:#BA865A"><b>上限等级</b>
+                </th>
+                <th style="background-color:#BA865A"><b>费用</b>
+                </th></tr>
+            <tr>
+                <td>10</td>
+                <td>-</td>
+                <td>-
+                </td></tr>
+            <tr>
+                <td>16</td>
+                <td>-</td>
+                <td>80,000
+                </td></tr>
+            <tr>
+                <td>22</td>
+                <td>-</td>
+                <td>200,000
+                </td></tr>
+            <tr>
+                <td>28</td>
+                <td>-</td>
+                <td>320,000
+                </td></tr>
+            <tr>
+                <td>34</td>
+                <td>35</td>
+                <td>480,000
+                </td></tr>
+            <tr>
+                <td>40</td>
+                <td>45</td>
+                <td>800,000
+                </td></tr>
+            <tr>
+                <td>52</td>
+                <td>55</td>
+                <td>1,600,000
+                </td></tr>
+            <tr>
+                <td>58</td>
+                <td>-</td>
+                <td>？
+                </td></tr>
+            <tr>
+                <td>64</td>
+                <td>85</td>
+                <td>4,000,000
+                </td></tr></tbody></table>
+        <p><br>
+        </p>
+        <h2><span class="mw-headline" id=".E5.A3.AB.E6.B0.94.E6.8A.80.E8.83.BD">士气技能</span></h2>
+        <ul><li>各战场技能使用值，使用时的增加数值如下。</li>
+            <li>红字为max士气值时的连续使用次数。</li></ul>
+        <p><br>
+        </p>
+        <table class="table table-bordered" style=" text-align:center">
+
+            <tbody><tr>
+                <th rowspan="2" style="background-color:#BA865A"><b>战场技能</b>
+                </th>
+                <th rowspan="2" style="background-color:#BA865A"><b>初始值</b>
+                </th>
+                <th rowspan="2" style="background-color:#BA865A"><b>增加值</b>
+                </th>
+                <th colspan="5" style="background-color:#BA865A"><b>连续使用的总士气值</b>
+                </th></tr>
+            <tr>
+                <th style="background-color:#EED8AE"><b>第1次</b>
+                </th>
+                <th style="background-color:#EED8AE"><b>第2次</b>
+                </th>
+                <th style="background-color:#EED8AE"><b>第3次</b>
+                </th>
+                <th style="background-color:#EED8AE"><b>第4次</b>
+                </th>
+                <th style="background-color:#EED8AE"><b>第5次</b>
+                </th></tr>
+            <tr>
+                <td> 民兵 </td>
+                <td>6</td>
+                <td>6</td>
+                <td>6</td>
+                <td>18</td>
+                <td>36</td>
+                <td><font color="red">60</font></td>
+                <td>90
+                </td></tr>
+            <tr>
+                <td> 忍者 </td>
+                <td>7</td>
+                <td>4</td>
+                <td>7</td>
+                <td>18</td>
+                <td>33</td>
+                <td><font color="red">52</font></td>
+                <td>75
+                </td></tr>
+            <tr>
+                <td> 巨人 </td>
+                <td>12</td>
+                <td>8</td>
+                <td>12</td>
+                <td>32</td>
+                <td><font color="red">60</font></td>
+                <td>96</td>
+                <td>140
+                </td></tr>
+            <tr>
+                <td> 爆弹 </td>
+                <td>4</td>
+                <td>6</td>
+                <td>4</td>
+                <td>14</td>
+                <td>30</td>
+                <td><font color="red">52</font></td>
+                <td>80
+                </td></tr>
+            <tr>
+                <td> 战争祝福 </td>
+                <td>8</td>
+                <td>2</td>
+                <td>8</td>
+                <td>18</td>
+                <td>30</td>
+                <td>44</td>
+                <td><font color="red">60</font>
+                </td></tr>
+            <tr>
+                <td> 迷雾 </td>
+                <td>5</td>
+                <td>6</td>
+                <td>5</td>
+                <td>16</td>
+                <td>33</td>
+                <td><font color="red">56</font></td>
+                <td>85
+                </td></tr></tbody></table>
+        <p><br>
+        </p>
+        <h2><span class="mw-headline" id=".E6.B0.91.E5.85.B5">民兵</span></h2>
+        <ul><li>比忍者生命高，人数多，但是攻击力较弱。近身攻击。</li>
+            <li>用于打倒或者延缓敌军进攻，或扰乱敌军攻击和技能的目标。</li></ul>
+        <p><br>
+        </p>
+        <table class="table table-bordered" style=" text-align:center">
+
+            <tbody><tr>
+                <th style="background-color:#BA865A"><b>等级</b>
+                </th>
+                <th style="background-color:#BA865A"><b>人数</b>
+                </th>
+                <th style="background-color:#BA865A"><b>生命</b>
+                </th>
+                <th style="background-color:#BA865A"><b>攻击力</b>
+                </th>
+                <th style="background-color:#BA865A"><b>防御</b>
+                </th>
+                <th style="background-color:#BA865A"><b>所需物品</b>
+                </th>
+                <th style="background-color:#BA865A"><b>费用</b>
+                </th></tr>
+            <tr>
+                <td style="background-color:#EED8AE">1</td>
+                <td>10</td>
+                <td>878</td>
+                <td>130</td>
+                <td>94</td>
+                <td>-</td>
+                <td>-
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">2</td>
+                <td>12</td>
+                <td>1,229</td>
+                <td>163</td>
+                <td>113</td>
+                <td>初级士气卷轴×5</td>
+                <td>500
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">3</td>
+                <td>12</td>
+                <td>1,580</td>
+                <td>196</td>
+                <td>132</td>
+                <td>初级士气卷轴×10</td>
+                <td>30,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">4</td>
+                <td>14</td>
+                <td>1,931</td>
+                <td>230</td>
+                <td>152</td>
+                <td>中级士气卷轴×20</td>
+                <td>-
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">5</td>
+                <td>14</td>
+                <td>2,283</td>
+                <td>263</td>
+                <td>171</td>
+                <td>中级士气卷轴×20</td>
+                <td>72,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">6</td>
+                <td>16</td>
+                <td>2,634</td>
+                <td>296</td>
+                <td>190</td>
+                <td>中级士气卷轴×40</td>
+                <td>120,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">7</td>
+                <td>16</td>
+                <td>2,985</td>
+                <td>330</td>
+                <td>209</td>
+                <td>中级士气卷轴×60</td>
+                <td>240,000？
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">8</td>
+                <td>18</td>
+                <td>3,336</td>
+                <td>363</td>
+                <td>229</td>
+                <td>高级士气卷轴×50</td>
+                <td>360,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">9</td>
+                <td>18</td>
+                <td>3,688</td>
+                <td>396</td>
+                <td>348</td>
+                <td>高级士气卷轴×70</td>
+                <td>480,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">10</td>
+                <td>20</td>
+                <td>4,039</td>
+                <td>430</td>
+                <td>267</td>
+                <td>高级士气卷轴×90</td>
+                <td>600,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">11</td>
+                <td>22</td>
+                <td>5,444</td>
+                <td>563</td>
+                <td>344</td>
+                <td>高级士气卷轴×100</td>
+                <td>1,500,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">12</td>
+                <td>22</td>
+                <td>6,849</td>
+                <td>696</td>
+                <td>421</td>
+                <td>高级士气卷轴×150</td>
+                <td>3,000,000
+                </td></tr></tbody></table>
+        <p><br>
+        </p>
+        <h2><span class="mw-headline" id=".E5.BF.8D.E8.80.85">忍者</span></h2>
+        <ul><li> 威望 等级25级开放。</li>
+            <li>生命低，攻击高，远距离攻击。</li>
+            <li>仅攻击敌方英雄。敌方英雄不存在时会攻击由士气召唤的民兵忍者巨人等。</li>
+            <li>通常在敌方后阵召唤，狙击敌方英雄。</li>
+            <li>因生命非常低，如果时机不对会被反狙击。</li></ul>
+        <p><br>
+        </p>
+        <table class="table table-bordered" style=" text-align:center">
+
+            <tbody><tr>
+                <th style="background-color:#BA865A"><b>等级</b>
+                </th>
+                <th style="background-color:#BA865A"><b>人数</b>
+                </th>
+                <th style="background-color:#BA865A"><b>生命</b>
+                </th>
+                <th style="background-color:#BA865A"><b>攻击力</b>
+                </th>
+                <th style="background-color:#BA865A"><b>防御</b>
+                </th>
+                <th style="background-color:#BA865A"><b>所需物品</b>
+                </th>
+                <th style="background-color:#BA865A"><b>费用</b>
+                </th></tr>
+            <tr>
+                <td style="background-color:#EED8AE">1</td>
+                <td>6</td>
+                <td>665</td>
+                <td>421</td>
+                <td>85</td>
+                <td>-</td>
+                <td>-
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">2</td>
+                <td>8</td>
+                <td>855</td>
+                <td>507</td>
+                <td>100</td>
+                <td>初级士气卷轴×5</td>
+                <td>20,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">3</td>
+                <td>8</td>
+                <td>1,045</td>
+                <td>593</td>
+                <td>114</td>
+                <td>初级士气卷轴×10</td>
+                <td>50,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">4</td>
+                <td>10</td>
+                <td>1,235</td>
+                <td>679</td>
+                <td>129</td>
+                <td>中级士气卷轴×20</td>
+                <td>80,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">5</td>
+                <td>10</td>
+                <td>1,425</td>
+                <td>765</td>
+                <td>143</td>
+                <td>中级士气卷轴×20</td>
+                <td>120,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">6</td>
+                <td>12</td>
+                <td>1,615</td>
+                <td>851</td>
+                <td>158</td>
+                <td>中级士气卷轴×40</td>
+                <td>200,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">7</td>
+                <td>12</td>
+                <td>1,805</td>
+                <td>937</td>
+                <td>172</td>
+                <td>中级士气卷轴×60</td>
+                <td>400,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">8</td>
+                <td>14</td>
+                <td>1,995</td>
+                <td>1,023</td>
+                <td>187</td>
+                <td>高级士气卷轴×50</td>
+                <td>600,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">9</td>
+                <td>14</td>
+                <td>2,185</td>
+                <td>1,109</td>
+                <td>201</td>
+                <td>高级士气卷轴×70</td>
+                <td>800,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">10</td>
+                <td>16</td>
+                <td>2,375</td>
+                <td>1,195</td>
+                <td>216</td>
+                <td>高级士气卷轴×90</td>
+                <td>1,000,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">11</td>
+                <td>18</td>
+                <td>3,135</td>
+                <td>1,539</td>
+                <td>274</td>
+                <td>高级士气卷轴×100</td>
+                <td>2,500,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">12</td>
+                <td>18</td>
+                <td>3,895</td>
+                <td>1,883</td>
+                <td>332</td>
+                <td>高级士气卷轴×150</td>
+                <td>5,000,000
+                </td></tr></tbody></table>
+        <p><br>
+        </p>
+        <h2><span class="mw-headline" id=".E5.B7.A8.E4.BA.BA">巨人</span></h2>
+        <ul><li> 威望 等级25级开放。</li>
+            <li>人数很少，攻击和生命很高，远程攻击。</li>
+            <li>投掷石块的范围攻击，放置在己方英雄后方时，累计的伤害十分可观。</li>
+            <li>但是使用的士气比较多。</li></ul>
+        <p><br>
+        </p>
+        <table class="table table-bordered" style="text-align:center">
+
+            <tbody><tr>
+                <th style="background-color:#BA865A"><b>等级</b>
+                </th>
+                <th style="background-color:#BA865A"><b>人数</b>
+                </th>
+                <th style="background-color:#BA865A"><b>生命</b>
+                </th>
+                <th style="background-color:#BA865A"><b>攻击力</b>
+                </th>
+                <th style="background-color:#BA865A"><b>防御</b>
+                </th>
+                <th style="background-color:#BA865A"><b>所需物品</b>
+                </th>
+                <th style="background-color:#BA865A"><b>费用</b>
+                </th></tr>
+            <tr>
+                <td style="background-color:#EED8AE">1</td>
+                <td>1</td>
+                <td>4,009</td>
+                <td>437</td>
+                <td>137</td>
+                <td>-</td>
+                <td>-
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">2</td>
+                <td>1</td>
+                <td>5,093</td>
+                <td>536</td>
+                <td>165</td>
+                <td>初级士气卷轴×5</td>
+                <td>40,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">3</td>
+                <td>1</td>
+                <td>6,177</td>
+                <td>635</td>
+                <td>193</td>
+                <td>初级士气卷轴×10</td>
+                <td>100,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">4</td>
+                <td>2</td>
+                <td>7,261</td>
+                <td>735</td>
+                <td>201</td>
+                <td>中级士气卷轴×20</td>
+                <td>160,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">5</td>
+                <td>2</td>
+                <td>8,344</td>
+                <td>834</td>
+                <td>249</td>
+                <td>中级士气卷轴×20</td>
+                <td>240,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">6</td>
+                <td>？</td>
+                <td>？</td>
+                <td>？</td>
+                <td>？</td>
+                <td>中级士气卷轴×40</td>
+                <td>400,000？
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">7</td>
+                <td>3</td>
+                <td>10,512</td>
+                <td>1,033</td>
+                <td>305</td>
+                <td>中级士气卷轴×60</td>
+                <td>800,000？
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">8</td>
+                <td>3</td>
+                <td>11,596</td>
+                <td>1,132</td>
+                <td>333</td>
+                <td>高级士气卷轴×50</td>
+                <td>1,200,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">9</td>
+                <td>3</td>
+                <td>12,679</td>
+                <td>1,231</td>
+                <td>361</td>
+                <td>高级士气卷轴×70</td>
+                <td>1,600,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">10</td>
+                <td>4</td>
+                <td>13,763</td>
+                <td>1,331</td>
+                <td>389</td>
+                <td>高级士气卷轴×90</td>
+                <td>2,000,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">11</td>
+                <td>4</td>
+                <td>18,098</td>
+                <td>1,728</td>
+                <td>501</td>
+                <td>高级士气卷轴×100</td>
+                <td>5,000,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">12</td>
+                <td>5</td>
+                <td>22,433</td>
+                <td>2,125</td>
+                <td>613</td>
+                <td>高级士气卷轴×150</td>
+                <td>10,000,000
+                </td></tr></tbody></table>
+        <p><br>
+        </p>
+        <h2><span class="mw-headline" id=".E7.88.86.E5.BC.B9">爆弹</span></h2>
+        <ul><li> 威望 等级8级开放。</li>
+            <li>在一定范围定给予固定伤害。</li>
+            <li>消耗士气较少，可使用于敌军密集区域或击杀敌方濒死英雄。</li></ul>
+        <p><br>
+        </p>
+        <table class="table table-bordered" style=" text-align:center">
+
+            <tbody><tr>
+                <th style="background-color:#BA865A"><b>等级</b>
+                </th>
+                <th style="background-color:#BA865A"><b>伤害</b>
+                </th>
+                <th style="background-color:#BA865A"><b>所需物品</b>
+                </th>
+                <th style="background-color:#BA865A"><b>费用</b>
+                </th></tr>
+            <tr>
+                <td style="background-color:#EED8AE">1</td>
+                <td>109</td>
+                <td>-</td>
+                <td>-
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">2</td>
+                <td>209</td>
+                <td>初级士气卷轴×5</td>
+                <td>16,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">3</td>
+                <td>340</td>
+                <td>初级士气卷轴×10</td>
+                <td>40,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">4</td>
+                <td>517</td>
+                <td>中级士气卷轴×20</td>
+                <td>64,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">5</td>
+                <td>？</td>
+                <td>中级士气卷轴×20</td>
+                <td>？
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">6</td>
+                <td>1,063</td>
+                <td>中级士气卷轴×40</td>
+                <td>？
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">7</td>
+                <td>1,463</td>
+                <td>中级士气卷轴×60</td>
+                <td>320,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">8</td>
+                <td>2,023</td>
+                <td>高级士气卷轴×50</td>
+                <td>480,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">9</td>
+                <td>2,680</td>
+                <td>高级士气卷轴×70</td>
+                <td>640,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">10</td>
+                <td>3,508</td>
+                <td>高级士气卷轴×90</td>
+                <td>800,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">11</td>
+                <td>4,100</td>
+                <td>高级士气卷轴×100</td>
+                <td>2,000,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">12</td>
+                <td>4,741</td>
+                <td>高级士气卷轴×150</td>
+                <td>4,000,000
+                </td></tr></tbody></table>
+        <p><br>
+        </p>
+        <h2><span class="mw-headline" id=".E6.88.98.E4.BA.89.E7.A5.9D.E7.A6.8F">战争祝福</span></h2>
+        <ul><li> 威望 等级28级开放。</li>
+            <li>恢复一定范围内的我军生命。</li>
+            <li>根据我方战术有一定需求的战场技能。</li></ul>
+        <p><br>
+        </p>
+        <table class="table table-bordered" style="  text-align:center">
+
+            <tbody><tr>
+                <th style="background-color:#BA865A"><b>等级</b>
+                </th>
+                <th style="background-color:#BA865A"><b>回复量</b>
+                </th>
+                <th style="background-color:#BA865A"><b>持续时间</b>
+                </th>
+                <th style="background-color:#BA865A"><b>所需物品</b>
+                </th>
+                <th style="background-color:#BA865A"><b>费用</b>
+                </th></tr>
+            <tr>
+                <td style="background-color:#EED8AE">1</td>
+                <td>21</td>
+                <td>6秒</td>
+                <td>-</td>
+                <td>-
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">2</td>
+                <td>39</td>
+                <td>6秒</td>
+                <td>初级士气卷轴×5</td>
+                <td>30,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">3</td>
+                <td>64</td>
+                <td>6秒</td>
+                <td>初级士气卷轴×10</td>
+                <td>75,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">4</td>
+                <td>97</td>
+                <td>8秒</td>
+                <td>中级士气卷轴×20</td>
+                <td>120,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">5</td>
+                <td>142</td>
+                <td>8秒</td>
+                <td>中级士气卷轴×20</td>
+                <td>？
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">6</td>
+                <td>202</td>
+                <td>8秒</td>
+                <td>中级士气卷轴×40</td>
+                <td>300,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">7</td>
+                <td>279</td>
+                <td>10秒</td>
+                <td>中级士气卷轴×60</td>
+                <td>600,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">8</td>
+                <td>380</td>
+                <td>10秒</td>
+                <td>高级士气卷轴×50</td>
+                <td>900,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">9</td>
+                <td>504</td>
+                <td>10秒</td>
+                <td>高级士气卷轴×70</td>
+                <td>1,200,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">10</td>
+                <td>660</td>
+                <td>10秒</td>
+                <td>高级士气卷轴×90</td>
+                <td>1,500,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">11</td>
+                <td>764</td>
+                <td>10秒</td>
+                <td>高级士气卷轴×100</td>
+                <td>3,750,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">12</td>
+                <td>877</td>
+                <td>10秒</td>
+                <td>高级士气卷轴×150</td>
+                <td>7,500,000
+                </td></tr></tbody></table>
+        <p><br>
+        </p>
+        <h2><span class="mw-headline" id=".E8.BF.B7.E9.9B.BE">迷雾</span></h2>
+        <ul><li> 威望 等级28级开放。</li>
+            <li>增加一定区域内我军闪避。</li>
+            <li>技能范围比想象中要大，根据情况可能成为胜负手。</li></ul>
+        <p><br>
+        </p>
+        <table class="table table-bordered" style=" text-align:center">
+
+            <tbody><tr>
+                <th style="background-color:#BA865A"><b>等级</b>
+                </th>
+                <th style="background-color:#BA865A"><b>闪避</b>
+                </th>
+                <th style="background-color:#BA865A"><b>持续时间</b>
+                </th>
+                <th style="background-color:#BA865A"><b>所需物品</b>
+                </th>
+                <th style="background-color:#BA865A"><b>费用</b>
+                </th></tr>
+            <tr>
+                <td style="background-color:#EED8AE">1</td>
+                <td>40</td>
+                <td>4秒</td>
+                <td>-</td>
+                <td>-
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">2</td>
+                <td>45</td>
+                <td>4秒</td>
+                <td>初级士气卷轴×5</td>
+                <td>30,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">3</td>
+                <td>50</td>
+                <td>4秒</td>
+                <td>初级士气卷轴×10</td>
+                <td>75,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">4</td>
+                <td>55</td>
+                <td>5秒</td>
+                <td>中级士气卷轴×20</td>
+                <td>120,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">5</td>
+                <td>60</td>
+                <td>5秒</td>
+                <td>中级士气卷轴×20</td>
+                <td>180,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">6</td>
+                <td>65</td>
+                <td>5秒</td>
+                <td>中级士气卷轴×40</td>
+                <td>300,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">7</td>
+                <td>70</td>
+                <td>6秒</td>
+                <td>中级士气卷轴×60</td>
+                <td>600,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">8</td>
+                <td>75</td>
+                <td>6秒</td>
+                <td>高级士气卷轴×50</td>
+                <td>900,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">9</td>
+                <td>80</td>
+                <td>6秒</td>
+                <td>高级士气卷轴×70</td>
+                <td>1,200,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">10</td>
+                <td>85</td>
+                <td>6秒</td>
+                <td>高级士气卷轴×90</td>
+                <td>1,500,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">11</td>
+                <td>90</td>
+                <td>6秒</td>
+                <td>高级士气卷轴×100</td>
+                <td>3,750,000
+                </td></tr>
+            <tr>
+                <td style="background-color:#EED8AE">12</td>
+                <td>95</td>
+                <td>7秒</td>
+                <td>高级士气卷轴×150</td>
+                <td>7,500,000
+                </td></tr></tbody></table>
+</div>
+</article>
+</body>
+
+</html>

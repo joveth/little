@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+    <title>浅谈小小军团1.91版后期实用肉盾分析</title>
+    <link href="../bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+<style>
+    body {
+        background: #e0e0e0;
+    }
+
+    .ttd {
+        background: #EED8AE;
+    }
+
+    td {
+        text-align: center;
+        background: #fff;
+    }
+
+    th {
+        text-align: center;
+    }
+
+    .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+        border: 1px solid #080808;
+    }
+
+    ul {
+        list-style: none;
+        padding: 8px;
+        text-align: center;
+    }
+
+    ul li {
+        float: left;
+        text-align: center;
+        list-style: none;
+        margin: 3px;
+    }
+
+    .life-div {
+        background: #956336;
+        border: 1px solid #431C04;
+        border-radius: 6px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        line-height: 24px;
+        color: #fff;
+    }
+
+    h3 {
+        margin-bottom: 0.3em;
+        border-bottom: 1px solid #d75330;
+        border-left: 0.4em solid #d75330;
+        padding-left: 0.5em;
+        color: #555;
+        margin-top: 5px;
+        height: 20px;
+        line-height: 20px;
+        clear: both;
+    }
+</style>
+<body style="color:#000;padding:10px;">
+<div id="mw-content-text" lang="zh-CN" dir="ltr" class="mw-content-ltr">
+    <p><br></p>
+<h2><span class="mw-headline" id=".E5.89.8D.E8.A8.80">前言</span></h2>
+<p>游戏后期，定义为威望满200级以后的时期，此时的玩家在pvp中常会匹配到老玩家，游戏时间差距跨度可以是三个月、半年，甚至一年，对战的战力差距程度一下子拉大。而每天都会出现的6星特殊任务，和一次性的默林试炼也必须面对难度、战力偏高的pve关卡。后期的输出强度和前期完全不同，基本上，好的肉盾部队吸收大量伤害，提供输出单位输出环境，扮演着相当重要的角色。</p>
+<p><br>小小军团后期可以说是方阵伤害为主，AOE技能伤害为辅，一场势均力敌的pvp，方阵伤害对技能伤害的比重大约在3:2到2:1之间。战斗法师小兵的高攻击力，奥术矛、黑矛部队的强力输出，使得合格的肉盾部队选择并不多。1.85版本增加了兵种克制，步兵和法师对盾兵方阵都能造成150%的伤害，使得盾兵部队实用性大幅减低，几乎消失在战场上了。以下提供一些后期实用的肉盾部队选择以及装备兵种搭配方式，供大家参考：</p>
+<p><br></p>
+<h2><span class="mw-headline" id=".281.29.E9.98.BF.E6.8B.89.E4.BB.80.EF.BC.88.E9.97.AA.E9.81.BF.E5.BC.A9.EF.BC.89">(1)阿拉什（闪避弩）</span></h2>
+<p>小小第一肉，不需要五星神装，不需要任何队伍辅助就能扛住前线物理伤害。主动技能优先升级，小兵等级也可以高于部队平均30~50级。</p>
+<p><b>兵种：</b>刺客</p>
+<p><b>装备：</b>提高闪避为主的装备，配合增加部队血量项链</p>
+<p><b>弱点：</b>黑矛阿喀琉斯、AOE</p>
+<p><br></p>
+<h2><span class="mw-headline" id=".282.29.E7.89.B9.E9.87.8C.E5.A7.86.EF.BC.88.E8.8B.8D.E8.9D.87.E3.80.81.E7.81.AB.E9.BE.99.EF.BC.89">(2)特里姆（苍蝇、火龙）</span></h2>
+<p>远程干扰最强，吸收大量远程部队方阵输出和AOE技能伤害。主动技能优先升级，被动技能也适度提升，以增加英雄本身基础防御力。前排必须有肉盾承受伤害，保护特里姆存活。主动进攻时，开场放一队民兵＋迷雾，先拖住对面远程部队，第15秒时制造的小火龙就可以开始发挥牵制效果。</p>
+<p><b>兵种：</b>投弹或重火皆可</p>
+<p><b>装备：</b>五星提高血量和防御的装备，配合增加部队攻击距离项链</p>
+<p><b>弱点：</b>绿帽罗宾汉技能、装备角斗士的荣耀项链（默林试炼获得）的部队</p>
+<p><br></p>
+<h2><span class="mw-headline" id=".283.29.E9.9B.B7.E5.93.88.E5.BE.B7.EF.BC.88.E7.99.BD.E7.9B.BE.EF.BC.89">(3)雷哈德（白盾）</span></h2>
+<p>开盾时无敌，必须配合奶爸腓里努斯延长存活，属于在炮火猛烈的前30秒最强力的特殊肉盾。在推图时利用白盾后排单置，附近配置奶爸，并适时使用迷雾士气的战术，无论在攻城或是打特殊关卡，都是最实用的。</p>
+<p><b>兵种：</b>链甲兵</p>
+<p><b>装备：</b>五星提高血量、防御和闪避的装备，配合堕落项链或坚韧之力项链</p>
+<p><b>弱点：</b>莫干娜（沉默）、眩晕（延迟技能释放）、绿帽罗宾汉（破防）</p>
+<p><br></p>
+<h2><span class="mw-headline" id=".284.29.E6.B2.99.E9.BB.98.E6.96.AF.EF.BC.88.E7.9F.B3.E5.A4.B4.E4.BA.BA.EF.BC.89">(4)沙默斯（石头人）</span></h2>
+<p>石头人比起上述三个英雄，关键时刻承担伤害的效果没那么明显，但却是最安定的肉盾。只需要基本装备，甚至主动技能都不用升，就能稳定吃下伤害。因为天生有两队小兵，而且技能一开场就释放，不怕沉默、晕眩、即死，固定抵抗大约25~40秒的时间。</p>
+<p><b>兵种：</b>链甲兵</p>
+<p><b>装备：</b>四星标准装备即可，配合增加部队血量项链</p>
+<p><b>弱点：</b>无特殊弱点</p>
+<p><br></p>
+<h2><span class="mw-headline" id=".285.29.E6.9F.A5.E7.90.86.E5.A4.A7.E5.B8.9D">(5)查理大帝</span></h2>
+<p>效果和石头人接近，比较差的地方在于：1.英雄怕沉默、晕眩、即死，造成无法召唤第二队小兵；2.敌方有复制法的场合，会复制查理，如果复制的查理被打到半血以下，同样会召唤一队属于敌方的小兵来攻击我方；3.骑兵小兵的血量比链甲兵少。比石头人占优的地方是：1.进阶的圣殿骑兵抗晕眩、变羊术，并且减少15%技能伤害；2.召唤出来的小兵行动逻辑独立于英雄，自行散开移动，干扰效果更好。</p>
+<p><b>兵种：</b>圣殿骑兵</p>
+<p><b>装备：</b>四星标准装备即可，配合增加部队血量项链</p>
+<p><b>弱点：</b>莫干娜（沉默）、眩晕或变羊（延迟技能释放）</p>
+<p><br></p>
+<h2><span class="mw-headline" id=".286.29.E8.B5.AB.E5.B0.94.E7.8E.9B.EF.BC.88.E6.B2.B3.E9.A9.AC.EF.BC.89">(6)赫尔玛（河马）</span></h2>
+<p>河马属于英雄等级越高，效果越好的肉盾英雄，在英雄达到180级，主动技能达到12时（血量低于50%，召唤4个血量60%的分身），能够提供最好的防御、干扰效果。河马的分身不继承英雄佩带项链的特殊效果（回血、减伤），只继承装备提升的基础血攻防闪属性，也不会受到弓骑尼克莱的技能伤害。</p>
+<p><b>兵种：</b>链甲兵</p>
+<p><b>装备：</b>五星提高血量和闪避的装备，配合堕落项链或坚韧之力项链</p>
+<p><b>弱点：</b>莫干娜（沉默）、眩晕或变羊（延迟技能释放）</p>
+<p><br></p>
+<h2><span class="mw-headline" id=".287.29.E5.96.80.E8.80.B3.E5.88.BB.EF.BC.88.E5.A4.8D.E5.88.B6.E6.B3.95.EF.BC.89">(7)喀耳刻（复制法）</span></h2>
+<p>复制法被定义为肉盾或许有些人不太能接受，但事实上他复制的英雄，最稳定的效果就是承受伤害。前排必须有肉盾保护喀耳刻存活。到了残局时刻，复制法往往能复制对方残存的远程群伤技能英雄，逆转战局。</p>
+<p><b>兵种：</b>战斗法师</p>
+<p><b>装备：</b>四星标准装备即可，配合回血项链、皇家守卫项链或统御项链（配合提高英雄幸运的装备）</p>
+<p><b>弱点：</b>无特殊弱点</p>
+<p><br></p>
+<h2><span class="mw-headline" id=".288.29.E5.90.89.E5.B0.94..E5.BE.B7..E8.8E.B1.E6.96.AF.EF.BC.88.E5.8F.8D.E5.B0.84.E7.9B.BE.EF.BC.89">(8)吉尔.德.莱斯（反射盾）</span></h2>
+<p>推荐的八名肉盾之中唯一的盾兵部队。反射盾在pvp中能够快速杀掉敌方群伤技能英雄，效果虽然不算是很稳定，仍然可以达到一定的牵制效果。值得一提的是英雄本身血量非常高，所以也具备拖延效果。盾兵的克制属性虽然不理想，但是却能抵抗来自火枪兵种的方阵伤害，1.91版本船长爱德华上阵的频率提高了，让反射盾去阻挡火枪兵的进攻吧！</p>
+<p><b>兵种：</b>神殿盾兵</p>
+<p><b>装备：</b>四星标准装备即可，配合增加部队血量项链</p>
+<p><b>弱点：</b>法师和步兵部队的方阵攻击（反射兵掉血后反射技能伤害的效果下降）</p>
+<p><br></p>
+<p>其他未提到的部队，例如盾兵中的沙佐、尤金、锡得里克在实战中的抵抗能力都比较不稳定。与其让一些吸收伤害能力不稳定的肉盾上阵，不如增加输出部队或是控制部队，毕竟小小军团的对战中，进攻也是最好的防守。</p>
+<!-- NewPP limit reportCPU time usage: 0.011 secondsReal time usage: 0.017 secondsPreprocessor visited node count: 43/1000000Preprocessor generated node count: 62/1000000Post‐expand include size: 208/2097152 bytesTemplate argument size: 0/2097152 bytesHighest expansion depth: 2/40Expensive parser function count: 0/100-->
+<!-- Transclusion expansion time report (%,ms,calls,template)100.00%    4.771      1 - -total100.00%    4.771      1 - 模板:首页-->
+<!-- Saved in parser cache with key miniwarriorswiki:pcache:idhash:1691-0!*!0!!zh-cn!*!* and timestamp 20160418045342 and revision id 5353 -->
+<input type="hidden" name="mytoken" id="mytoken" value="">
+<input type="hidden" name="pageId" id="pageId" value="">
+</div>
+</body>
+</html>

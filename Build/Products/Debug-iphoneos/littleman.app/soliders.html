@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+    <title>兵种</title>
+    <link href="../bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+<style>
+    body {
+        background: #e0e0e0;
+    }
+
+    .ttd {
+        background: #EED8AE;
+    }
+
+    td {
+        text-align: center;
+        background: #fff;
+    }
+
+    th {
+        text-align: center;
+    }
+
+    .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+        border: 1px solid #080808;
+    }
+
+    ul {
+        list-style: none;
+        padding: 8px;
+        text-align: center;
+    }
+
+    ul li {
+        float: left;
+        text-align: center;
+        list-style: none;
+        margin: 3px;
+    }
+
+    .life-div {
+        background: #956336;
+        border: 1px solid #431C04;
+        border-radius: 6px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        line-height: 24px;
+        color: #fff;
+    }
+
+    h3 {
+        margin-bottom: 0.3em;
+        border-bottom: 1px solid #d75330;
+        border-left: 0.4em solid #d75330;
+        padding-left: 0.5em;
+        color: #555;
+        margin-top: 5px;
+        height: 20px;
+        line-height: 20px;
+        clear: both;
+    }
+</style>
+<body style="color:#000;padding:10px;">
+<div id="mw-content-text" lang="zh-CN" dir="ltr" class="mw-content-ltr">
+    <table class="wikitable" style="box-shadow: rgb(136, 136, 136) 2px 2px 3px;text-align:center;width:100%">
+ <tbody>
+  <tr>
+   <th style="background-color:#EED8AE;width:10%"><b>武器名</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>对无甲</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>对布甲</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>对轻甲</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>对皮甲</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>对锁甲</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>对重甲</b></th>
+   <th style="background-color:#EED8AE;width:30%"><b>所持兵种</b></th>
+  </tr>
+  <tr>
+   <td><a class="image"><img alt="普通.jpg" src="E699AEE9809A.jpg" width="40" height="40"></a>普通</td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#D75330"><b>150％</b></font></td>
+   <td>步兵(2)</td>
+  </tr>
+  <tr>
+   <td><a class="image"><img alt="重击.jpg" src="E9878DE587BB.jpg" width="40" height="40"></a>重击</td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#9600FF"><b>125％</b></font></td>
+   <td><font color="#13A133"><b>75％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td>盾兵(2)、骑兵(1)</td>
+  </tr>
+  <tr>
+   <td><a class="image"><img alt="穿刺.jpg" src="E7A9BFE588BA.jpg" width="40" height="40"></a>穿刺</td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#9600FF"><b>125％</b></font></td>
+   <td><font color="#9600FF"><b>125％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#9600FF"><b>125％</b></font></td>
+   <td><font color="#13A133"><b>75％</b></font></td>
+   <td>骑兵(1)、枪兵(2)</td>
+  </tr>
+  <tr>
+   <td><a class="image"><img alt="箭弩.jpg" src="E7AEADE5BCA9.jpg" width="40" height="40"></a>箭弩</td>
+   <td><font color="#9600FF"><b>125％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#9600FF"><b>125％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#9600FF"><b>125％</b></font></td>
+   <td><font color="#13A133"><b>75％</b></font></td>
+   <td>弓兵(2)、弓骑兵(2)、弩兵(2)</td>
+  </tr>
+  <tr>
+   <td><a class="image"><img alt="火枪.jpg" src="E781ABE69EAA.jpg" width="40" height="40"></a>火枪</td>
+   <td><font color="#D75330"><b>150％</b></font></td>
+   <td><font color="#D75330"><b>150％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#13A133"><b>75％</b></font></td>
+   <td><font color="#9600FF"><b>125％</b></font></td>
+   <td><font color="#7E7E7E"><b>50％</b></font></td>
+   <td>火枪兵(2)</td>
+  </tr>
+  <tr>
+   <td><a class="image"><img alt="魔法.jpg" src="E9AD94E6B395.jpg" width="40" height="40"></a>魔法</td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#9600FF"><b>125％</b></font></td>
+   <td><font color="#13A133"><b>75％</b></font></td>
+   <td><font color="#D75330"><b>150％</b></font></td>
+   <td>魔法师(2)</td>
+  </tr>
+ </tbody>
+</table>
+<ul>
+ <li>％越高伤害效率越高。</li>
+ <li>()内的数值为上级兵种的平均数</li>
+</ul>
+<p><br></p>
+<h2><span class="mw-headline" id=".E9.98.B2.E5.85.B7.E7.9B.B8.E6.80.A7">防具相性</span></h2>
+<table class="wikitable" style="box-shadow: rgb(136, 136, 136) 2px 2px 3px;text-align:center;width:100%">
+ <tbody>
+  <tr>
+   <th style="background-color:#EED8AE;width:10%"><b>防具名</b></th>
+   <th style="background-color:#EED8AE;width:10%">对普通攻击</th>
+   <th style="background-color:#EED8AE;width:10%">对重击</th>
+   <th style="background-color:#EED8AE;width:10%">对穿刺</th>
+   <th style="background-color:#EED8AE;width:10%">对魔法</th>
+   <th style="background-color:#EED8AE;width:10%">对枪弹</th>
+   <th style="background-color:#EED8AE;width:10%">对箭驽</th>
+   <th style="background-color:#EED8AE;width:30%">所持兵种</th>
+  </tr>
+  <tr>
+   <td><a class="image"><img alt="无甲.jpg" src="E697A0E794B2.jpg" width="40" height="40"></a>无甲</td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#D75330"><b>150％</b></font></td>
+   <td><font color="#9600FF"><b>125％</b></font></td>
+   <td>弓兵(2)</td>
+  </tr>
+  <tr>
+   <td><a class="image"><img alt="布甲.jpg" src="E5B883E794B2.jpg" width="40" height="40"></a>布甲</td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#9600FF"><b>125％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#D75330"><b>150％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td>弓骑兵(1)、魔法师(2)</td>
+  </tr>
+  <tr>
+   <td><a class="image"><img alt="轻甲.jpg" src="E8BDBBE794B2.jpg" width="40" height="40"></a>轻甲</td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#9600FF"><b>125％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#9600FF"><b>125％</b></font></td>
+   <td>弓骑兵(1)、弩兵(2)、火枪兵(1)</td>
+  </tr>
+  <tr>
+   <td><a class="image"><img alt="皮甲.jpg" src="E79AAEE794B2.jpg" width="40" height="40"></a>皮甲</td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#9600FF"><b>125％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#9600FF"><b>125％</b></font></td>
+   <td><font color="#13A133"><b>75％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td>步兵(1)、枪兵(1)、火枪兵(1)</td>
+  </tr>
+  <tr>
+   <td><a class="image"><img alt="锁甲.jpg" src="E99481E794B2.jpg" width="40" height="40"></a>锁甲</td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#13A133"><b>75％</b></font></td>
+   <td><font color="#9600FF"><b>125％</b></font></td>
+   <td><font color="#13A133"><b>75％</b></font></td>
+   <td><font color="#9600FF"><b>125％</b></font></td>
+   <td><font color="#9600FF"><b>125％</b></font></td>
+   <td>步兵(1)、枪兵(1)、骑兵(2)</td>
+  </tr>
+  <tr>
+   <td><a class="image"><img alt="重甲.jpg" src="E9878DE794B2.jpg" width="40" height="40"></a>重甲</td>
+   <td><font color="#D75330"><b>150％</b></font></td>
+   <td><font color="#3B90FF"><b>100％</b></font></td>
+   <td><font color="#13A133"><b>75％</b></font></td>
+   <td><font color="#D75330"><b>150％</b></font></td>
+   <td><font color="#7E7E7E"><b>50％</b></font></td>
+   <td><font color="#13A133"><b>75％</b></font></td>
+   <td>盾兵(2)</td>
+  </tr>
+ </tbody>
+</table>
+<ul>
+ <li>％越低收到的伤害越少。</li>
+ <li>()内的数值为上级兵种的平均数。</li>
+</ul>
+<p><br></p>
+<h2><span class="mw-headline" id=".E6.AD.A5.E5.85.B5">步兵</span></h2>
+<table class="wikitable" style="box-shadow: rgb(136, 136, 136) 2px 2px 3px;width:100%;text-align:center">
+ <tbody>
+  <tr>
+   <th style="background-color:#EED8AE;width:10%"><b>兵种名称</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>武器</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防具</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>生命</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防御</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>幸运</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>闪避</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>移动速度</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击范围</b></th>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="步兵"><img alt="步兵" src="E6ADA5E585B5.png" width="60" height="60"></a><br><a title="小小军团步兵兵种图鉴">步兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E699AEE9809A.jpg" width="40" height="40"></a><br>普通</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E79AAEE794B2.jpg" width="40" height="40"></a><br>皮甲</td>
+   <td>513</td>
+   <td>149</td>
+   <td>50</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>无</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="步兵"><img alt="步兵" src="E7B2BEE99490E6ADA5E585B5.png" width="60" height="60"></a><br><a title="小小军团步兵兵种图鉴">精锐步兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E699AEE9809A.jpg" width="40" height="40"></a><br>普通</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E79AAEE794B2.jpg" width="40" height="40"></a><br>皮甲</td>
+   <td>562</td>
+   <td>176</td>
+   <td>59</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>无</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="步兵"><img alt="步兵" src="E58D81E5AD97E5869B.png" width="60" height="60"></a><br><a title="小小军团步兵兵种图鉴">十字军</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E699AEE9809A.jpg" width="40" height="40"></a><br>普通</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E79AAEE794B2.jpg" width="40" height="40"></a><br>皮甲</td>
+   <td>531</td>
+   <td>202</td>
+   <td>57</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>信仰：死亡后对击杀者造成相当于十字军自身血量上限15%的额外伤害（无法闪避）</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="步兵"><img alt="步兵" src="E993BEE794B2E585B5.png" width="60" height="60"></a><br><a title="小小军团步兵兵种图鉴">链甲兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E699AEE9809A.jpg" width="40" height="40"></a><br>普通</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E99481E794B2.jpg" width="40" height="40"></a><br>锁甲</td>
+   <td>593</td>
+   <td>169</td>
+   <td>67</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>晕击：每3次普通攻击会眩晕敌人1秒，对英雄无效。</td>
+  </tr>
+ </tbody>
+</table>
+<p><br></p>
+<h2><span class="mw-headline" id=".E9.95.BF.E6.9E.AA.E5.85.B5">长枪兵</span></h2>
+<table class="wikitable" style="box-shadow: rgb(136, 136, 136) 2px 2px 3px;width:100%;text-align:center">
+ <tbody>
+  <tr>
+   <th style="background-color:#EED8AE;width:10%"><b>兵种名称</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>武器</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防具</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>生命</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防御</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>幸运</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>闪避</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>移动速度</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击范围</b></th>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="长枪兵"><img alt="长枪兵" src="E995BFE69EAAE585B5.png" width="60" height="60"></a><br><a title="小小军团长枪兵兵种图鉴">长枪兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7A9BFE588BA.jpg" width="40" height="40"></a><br>穿刺</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E79AAEE794B2.jpg" width="40" height="40"></a><br>皮甲</td>
+   <td>379</td>
+   <td>238</td>
+   <td>40</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>无</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="长枪兵"><img alt="长枪兵" src="E7B2BEE99490E995BFE69EAAE585B5.png" width="60" height="60"></a><br><a title="小小军团长枪兵兵种图鉴">精锐长枪兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7A9BFE588BA.jpg" width="40" height="40"></a><br>穿刺</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E79AAEE794B2.jpg" width="40" height="40"></a><br>皮甲</td>
+   <td>408</td>
+   <td>252</td>
+   <td>42</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>无</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="长枪兵"><img alt="长枪兵" src="E995BFE6889FE585B5.png" width="60" height="60"></a><br><a title="小小军团长枪兵兵种图鉴">长戟兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7A9BFE588BA.jpg" width="40" height="40"></a><br>穿刺</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E99481E794B2.jpg" width="40" height="40"></a><br>锁甲</td>
+   <td>426</td>
+   <td>273</td>
+   <td>43</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>团结：当英雄存活时基础攻击力增加30％。</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="长枪兵"><img alt="长枪兵" src="E696AFE5B7B4E8BEBE.png" width="60" height="60"></a><br><a title="小小军团长枪兵兵种图鉴">斯巴达</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7A9BFE588BA.jpg" width="40" height="40"></a><br>穿刺</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E79AAEE794B2.jpg" width="40" height="40"></a><br>皮甲</td>
+   <td>416</td>
+   <td>249</td>
+   <td>41</td>
+   <td>30</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>列阵：每击杀一个目标，增加英雄3%基础攻击力，最多75％</td>
+  </tr>
+ </tbody>
+</table>
+<p><br></p>
+<h2><span class="mw-headline" id=".E7.9B.BE.E5.85.B5">盾兵</span></h2>
+<table class="wikitable" style="box-shadow: rgb(136, 136, 136) 2px 2px 3px;width:100%;text-align:center">
+ <tbody>
+  <tr>
+   <th style="background-color:#EED8AE;width:10%"><b>兵种名称</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>武器</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防具</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>生命</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防御</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>幸运</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>闪避</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>移动速度</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击范围</b></th>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="盾兵"><img alt="盾兵" src="E79BBEE585B5.png" width="60" height="60"></a><br><a title="小小军团盾兵兵种图鉴">盾兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E9878DE587BB.jpg" width="40" height="40"></a><br>重击</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E9878DE794B2.jpg" width="40" height="40"></a><br>重甲</td>
+   <td>658</td>
+   <td>109</td>
+   <td>78</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>无</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="盾兵"><img alt="盾兵" src="E7B2BEE99490E79BBEE585B5.png" width="60" height="60"></a><br><a title="小小军团盾兵兵种图鉴">精锐盾兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E9878DE587BB.jpg" width="40" height="40"></a><br>重击</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E9878DE794B2.jpg" width="40" height="40"></a><br>重甲</td>
+   <td>655</td>
+   <td>116</td>
+   <td>83</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>无</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="盾兵"><img alt="盾兵" src="E5A4A7E79BBEE585B5.png" width="60" height="60"></a><br><a title="小小军团盾兵兵种图鉴">大盾兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E9878DE587BB.jpg" width="40" height="40"></a><br>重击</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E9878DE794B2.jpg" width="40" height="40"></a><br>重甲</td>
+   <td>698</td>
+   <td>112</td>
+   <td>89</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>格挡：所受普通攻击的伤害减免15%。</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="盾兵"><img alt="盾兵" src="E7A59EE6AEBFE79BBEE585B5.png" width="60" height="60"></a><br><a title="小小军团盾兵兵种图鉴">神殿盾兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E9878DE587BB.jpg" width="40" height="40"></a><br>重击</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E9878DE794B2.jpg" width="40" height="40"></a><br>重甲</td>
+   <td>841</td>
+   <td>112</td>
+   <td>80</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>神佑：受到治疗效果提升20%。</td>
+  </tr>
+ </tbody>
+</table>
+<p><br></p>
+<h2><span class="mw-headline" id=".E9.AA.91.E5.85.B5">骑兵</span></h2>
+<table class="wikitable" style="box-shadow: rgb(136, 136, 136) 2px 2px 3px;width:100%;text-align:center">
+ <tbody>
+  <tr>
+   <th style="background-color:#EED8AE;width:10%"><b>兵种名称</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>武器</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防具</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>生命</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防御</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>幸运</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>闪避</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>移动速度</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击范围</b></th>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="骑兵"><img alt="骑兵" src="E9AA91E585B5.png" width="60" height="60"></a><br><a title="小小军团骑兵兵种图鉴">骑兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7A9BFE588BA.jpg" width="40" height="40"></a><br>穿刺</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E99481E794B2.jpg" width="40" height="40"></a><br>锁甲</td>
+   <td>456</td>
+   <td>177</td>
+   <td>49</td>
+   <td>无</td>
+   <td>无</td>
+   <td>156</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>无</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="骑兵"><img alt="骑兵" src="E7B2BEE99490E9AA91E585B5.png" width="60" height="60"></a><br><a title="小小军团骑兵兵种图鉴">精锐骑兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7A9BFE588BA.jpg" width="40" height="40"></a><br>穿刺</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E99481E794B2.jpg" width="40" height="40"></a><br>锁甲</td>
+   <td>483</td>
+   <td>188</td>
+   <td>52</td>
+   <td>无</td>
+   <td>无</td>
+   <td>156</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>无</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="骑兵"><img alt="骑兵" src="E7AA81E587BBE9AA91E585B5.png" width="60" height="60"></a><br><a title="小小军团骑兵兵种图鉴">突击骑兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7A9BFE588BA.jpg" width="40" height="40"></a><br>穿刺</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E99481E794B2.jpg" width="40" height="40"></a><br>锁甲</td>
+   <td>523</td>
+   <td>193</td>
+   <td>54</td>
+   <td>无</td>
+   <td>无</td>
+   <td>200</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>冲锋：开战后第一次普通攻击使目标基础防御力降低35%，持续整场战斗。</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="骑兵"><img alt="骑兵" src="E59CA3E6AEBFE9AA91E585B5.png" width="60" height="60"></a><br><a title="小小军团骑兵兵种图鉴">圣殿骑兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E9878DE587BB.jpg" width="40" height="40"></a><br>重击</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E99481E794B2.jpg" width="40" height="40"></a><br>锁甲</td>
+   <td>495</td>
+   <td>184</td>
+   <td>64</td>
+   <td>无</td>
+   <td>无</td>
+   <td>200</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>坚韧：免疫眩晕和变形，并减少所受英雄技能伤害。</td>
+  </tr>
+ </tbody>
+</table>
+<p><br></p>
+<h2><span class="mw-headline" id=".E5.BC.93.E7.AE.AD.E6.89.8B">弓箭手</span></h2>
+<table class="wikitable" style="box-shadow: rgb(136, 136, 136) 2px 2px 3px;width:100%;text-align:center">
+ <tbody>
+  <tr>
+   <th style="background-color:#EED8AE;width:10%"><b>兵种名称</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>武器</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防具</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>生命</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防御</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>幸运</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>闪避</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>移动速度</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击范围</b></th>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="弓箭手"><img alt="弓箭手" src="E5BC93E7AEADE6898B.png" width="60" height="60"></a><br><a title="小小军团弓箭手兵种图鉴">弓箭手</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7AEADE5BCA9.jpg" width="40" height="40"></a><br>箭弩</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E697A0E794B2.jpg" width="40" height="40"></a><br>无甲</td>
+   <td>514</td>
+   <td>151</td>
+   <td>40</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>350</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>※无法近身还击</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="弓箭手"><img alt="弓箭手" src="E7B2BEE99490E5BC93E7AEADE6898B.png" width="60" height="60"></a><br><a title="小小军团弓箭手兵种图鉴">精锐弓箭手</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7AEADE5BCA9.jpg" width="40" height="40"></a><br>箭弩</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E697A0E794B2.jpg" width="40" height="40"></a><br>无甲</td>
+   <td>545</td>
+   <td>160</td>
+   <td>43</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>350</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>※无法近身还击</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="弓箭手"><img alt="弓箭手" src="E995BFE5BC93E585B5.png" width="60" height="60"></a><br><a title="小小军团弓箭手兵种图鉴">长弓兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7AEADE5BCA9.jpg" width="40" height="40"></a><br>箭弩</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E697A0E794B2.jpg" width="40" height="40"></a><br>无甲</td>
+   <td>582</td>
+   <td>166</td>
+   <td>46</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>420</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>神射：距离敌人越远基础攻击力越高。※无法近身还击</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="弓箭手"><img alt="弓箭手" src="E6B8B8E4BEA0.png" width="60" height="60"></a><br><a title="小小军团弓箭手兵种图鉴">游侠</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7AEADE5BCA9.jpg" width="40" height="40"></a><br>箭弩</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E697A0E794B2.jpg" width="40" height="40"></a><br>无甲</td>
+   <td>540</td>
+   <td>181</td>
+   <td>40</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>350</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>精准：普通攻击无法被闪避。※无法近身还击</td>
+  </tr>
+ </tbody>
+</table>
+<p><br></p>
+<h2><span class="mw-headline" id=".E5.BC.93.E9.AA.91.E5.85.B5">弓骑兵</span></h2>
+<table class="wikitable" style="box-shadow: rgb(136, 136, 136) 2px 2px 3px;width:100%;text-align:center">
+ <tbody>
+  <tr>
+   <th style="background-color:#EED8AE;width:10%"><b>兵种名称</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>武器</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防具</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>生命</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防御</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>幸运</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>闪避</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>移动速度</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击范围</b></th>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="弓骑兵"><img alt="弓骑兵" src="E5BC93E9AA91E585B5.png" width="60" height="60"></a><br><a title="小小军团弓骑兵兵种图鉴">弓骑兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7AEADE5BCA9.jpg" width="40" height="40"></a><br>箭弩</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E8BDBBE794B2.jpg" width="40" height="40"></a><br>轻甲</td>
+   <td>531</td>
+   <td>173</td>
+   <td>26</td>
+   <td>无</td>
+   <td>无</td>
+   <td>156</td>
+   <td>250</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>※无法近身还击</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="弓骑兵"><img alt="弓骑兵" src="E7B2BEE99490E5BC93E9AA91E585B5.png" width="60" height="60"></a><br><a title="小小军团弓骑兵兵种图鉴">精锐弓骑兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7AEADE5BCA9.jpg" width="40" height="40"></a><br>箭弩</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E8BDBBE794B2.jpg" width="40" height="40"></a><br>轻甲</td>
+   <td>570</td>
+   <td>183</td>
+   <td>28</td>
+   <td>无</td>
+   <td>无</td>
+   <td>156</td>
+   <td>250</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>※无法近身还击</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="弓骑兵"><img alt="弓骑兵" src="E5B895E68F90E4BA9AE5BC93E9AA91.png" width="60" height="60"></a><br><a title="小小军团弓骑兵兵种图鉴">帕提亚弓骑</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7AEADE5BCA9.jpg" width="40" height="40"></a><br>箭弩</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E5B883E794B2.jpg" width="40" height="40"></a><br>布甲</td>
+   <td>562</td>
+   <td>204</td>
+   <td>29</td>
+   <td>无</td>
+   <td>无</td>
+   <td>156</td>
+   <td>250</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>撕裂：攻击命中敌方目标后，目标在3秒内受到的治疗效果降低40%，不可叠加。※无法近身还击</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="弓骑兵"><img alt="弓骑兵" src="E6B8B8E789A7E5BC93E9AA91.png" width="60" height="60"></a><br><a title="小小军团弓骑兵兵种图鉴">游牧弓骑</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7AEADE5BCA9.jpg" width="40" height="40"></a><br>箭弩</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E8BDBBE794B2.jpg" width="40" height="40"></a><br>轻甲</td>
+   <td>613</td>
+   <td>188</td>
+   <td>32</td>
+   <td>无</td>
+   <td>无</td>
+   <td>200</td>
+   <td>250</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>鹰眼：和敌人方阵作战时优先射击敌方英雄</td>
+  </tr>
+ </tbody>
+</table>
+<p><br></p>
+<h2><span class="mw-headline" id=".E5.BC.A9.E5.85.B5">弩兵</span></h2>
+<table class="wikitable" style="box-shadow: rgb(136, 136, 136) 2px 2px 3px;width:100%;text-align:center">
+ <tbody>
+  <tr>
+   <th style="background-color:#EED8AE;width:10%"><b>兵种名称</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>武器</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防具</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>生命</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防御</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>幸运</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>闪避</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>移动速度</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击范围</b></th>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="弩兵"><img alt="弩兵" src="E5BCA9E585B5.png" width="60" height="60"></a><br><a title="小小军团弩兵兵种图鉴">弩兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7AEADE5BCA9.jpg" width="40" height="40"></a><br>箭弩</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E8BDBBE794B2.jpg" width="40" height="40"></a><br>轻甲</td>
+   <td>496</td>
+   <td>160</td>
+   <td>54</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>250</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>无</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="弩兵"><img alt="弩兵" src="E7B2BEE99490E5BCA9E585B5.png" width="60" height="60"></a><br><a title="小小军团弩兵兵种图鉴">精锐弩兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7AEADE5BCA9.jpg" width="40" height="40"></a><br>箭弩</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E8BDBBE794B2.jpg" width="40" height="40"></a><br>轻甲</td>
+   <td>521</td>
+   <td>170</td>
+   <td>57</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>250</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>无</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="弩兵"><img alt="弩兵" src="E9878DE5BCA9E585B5.png" width="60" height="60"></a><br><a title="小小军团弩兵兵种图鉴">重弩兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7AEADE5BCA9.jpg" width="40" height="40"></a><br>箭弩</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E8BDBBE794B2.jpg" width="40" height="40"></a><br>轻甲</td>
+   <td>521</td>
+   <td>189</td>
+   <td>57</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>250</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>破甲：攻击命中敌方目标后，有15%概率使目标在{1}秒内防御力变为0，对英雄无效。</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="弩兵"><img alt="弩兵" src="E588BAE5AEA2.png" width="60" height="60"></a><br><a title="小小军团弩兵兵种图鉴">刺客</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7AEADE5BCA9.jpg" width="40" height="40"></a><br>箭弩</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E8BDBBE794B2.jpg" width="40" height="40"></a><br>轻甲</td>
+   <td>559</td>
+   <td>167</td>
+   <td>56</td>
+   <td>无</td>
+   <td>10</td>
+   <td>65</td>
+   <td>250</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>刺杀：目标血量越低，越容易使目标立即死亡，对英雄无效。</td>
+  </tr>
+ </tbody>
+</table>
+<p><br></p>
+<h2><span class="mw-headline" id=".E7.81.AB.E6.9E.AA.E6.89.8B">火枪手</span></h2>
+<table class="wikitable" style="box-shadow: rgb(136, 136, 136) 2px 2px 3px;width:100%;text-align:center">
+ <tbody>
+  <tr>
+   <th style="background-color:#EED8AE;width:10%"><b>兵种名称</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>武器</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防具</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>生命</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防御</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>幸运</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>闪避</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>移动速度</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击范围</b></th>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="火枪手"><img alt="火枪手" src="E781ABE69EAAE6898B.png" width="60" height="60"></a><br><a title="小小军团火枪手兵种图鉴">火枪手</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E781ABE69EAA.jpg" width="40" height="40"></a><br>火枪</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E8BDBBE794B2.jpg" width="40" height="40"></a><br>轻甲</td>
+   <td>363</td>
+   <td>174</td>
+   <td>44</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>250</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>※无法近身还击</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="火枪手"><img alt="火枪手" src="E7B2BEE99490E781ABE69EAAE585B5.png" width="60" height="60"></a><br><a title="小小军团火枪手兵种图鉴">精锐火枪兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E781ABE69EAA.jpg" width="40" height="40"></a><br>火枪</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E8BDBBE794B2.jpg" width="40" height="40"></a><br>轻甲</td>
+   <td>386</td>
+   <td>184</td>
+   <td>46</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>250</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>※无法近身还击</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="火枪手"><img alt="火枪手" src="E9878DE59E8BE781ABE69EAAE585B5.png" width="60" height="60"></a><br><a title="小小军团火枪手兵种图鉴">重型火枪兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E781ABE69EAA.jpg" width="40" height="40"></a><br>火枪</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E79AAEE794B2.jpg" width="40" height="40"></a><br>皮甲</td>
+   <td>386</td>
+   <td>207</td>
+   <td>45</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>250</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>枪袭：命中时对眩晕的敌人造成额外50%的伤害。※无法近身还击</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="火枪手"><img alt="火枪手" src="E68A95E5BCB9E6898B.png" width="60" height="60"></a><br><a title="小小军团火枪手兵种图鉴">投弹手</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E781ABE69EAA.jpg" width="40" height="40"></a><br>火枪</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E8BDBBE794B2.jpg" width="40" height="40"></a><br>轻甲</td>
+   <td>457</td>
+   <td>181</td>
+   <td>46</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>250</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>爆炸：对攻击目标周围最多3个敌人造成10%的溅射伤害。※无法近身还击</td>
+  </tr>
+ </tbody>
+</table>
+<p><br></p>
+<h2><span class="mw-headline" id=".E9.AD.94.E6.B3.95.E5.B8.88">魔法师</span></h2>
+<table class="wikitable" style="box-shadow: rgb(136, 136, 136) 2px 2px 3px;width:100%;text-align:center">
+ <tbody>
+  <tr>
+   <th style="background-color:#EED8AE;width:10%"><b>兵种名称</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>武器</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防具</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>生命</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防御</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>幸运</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>闪避</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>移动速度</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击范围</b></th>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="魔法师"><img alt="魔法师" src="E9AD94E6B395E5B888.png" width="60" height="60"></a><br><a title="小小军团魔法师兵种图鉴">魔法师</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E9AD94E6B395.jpg" width="40" height="40"></a><br>魔法</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E5B883E794B2.jpg" width="40" height="40"></a><br>布甲</td>
+   <td>411</td>
+   <td>188</td>
+   <td>42</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>250</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>※无法近身还击</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="魔法师"><img alt="魔法师" src="E7B2BEE99490E9AD94E6B395E5B888.png" width="60" height="60"></a><br><a title="小小军团魔法师兵种图鉴">精锐魔法师</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E9AD94E6B395.jpg" width="40" height="40"></a><br>魔法</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E5B883E794B2.jpg" width="40" height="40"></a><br>布甲</td>
+   <td>438</td>
+   <td>199</td>
+   <td>45</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>250</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>※无法近身还击</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="魔法师"><img alt="魔法师" src="E68898E69697E6B395E5B888.png" width="60" height="60"></a><br><a title="小小军团魔法师兵种图鉴">战斗法师</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E9AD94E6B395.jpg" width="40" height="40"></a><br>魔法</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E5B883E794B2.jpg" width="40" height="40"></a><br>布甲</td>
+   <td>431</td>
+   <td>227</td>
+   <td>43</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>250</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>诅咒：攻击命中敌方目标后，使其受到英雄技能伤害增加10%，持续2秒。※无法近身还击</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="魔法师"><img alt="魔法师" src="E5A5A5E883BDE5ADA6E5BE92.png" width="60" height="60"></a><br><a title="小小军团魔法师兵种图鉴">奥能学徒</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E9AD94E6B395.jpg" width="40" height="40"></a><br>魔法</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E5B883E794B2.jpg" width="40" height="40"></a><br>布甲</td>
+   <td>517</td>
+   <td>195</td>
+   <td>45</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>250</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>奥义：每击杀一个目标，可为我方当前血量百分比最低的英雄恢复其血量上限1%的血量。※无法近身还击</td>
+  </tr>
+ </tbody>
+</table>
+<p><br></p>
+<h2><span class="mw-headline" id=".E9.87.8E.E8.9B.AE.E4.BA.BA.E7.8B.BC.E9.AA.91.E5.85.B5">野蛮人狼骑兵</span></h2>
+<table class="wikitable" style="box-shadow: rgb(136, 136, 136) 2px 2px 3px;width:100%;text-align:center">
+ <tbody>
+  <tr>
+   <th style="background-color:#EED8AE;width:10%"><b>兵种名称</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>武器</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防具</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>生命</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防御</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>幸运</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>闪避</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>移动速度</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击范围</b></th>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="野蛮人狼骑兵"><img alt="野蛮人狼骑兵" src="E9878EE89BAEE4BABAE78BBCE9AA91E585B5.png" width="60" height="60"></a><br><a title="小小军团野蛮人狼骑兵兵种图鉴">野蛮人狼骑兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7A9BFE588BA.jpg" width="40" height="40"></a><br>穿刺</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E99481E794B2.jpg" width="40" height="40"></a><br>锁甲</td>
+   <td>650</td>
+   <td>152</td>
+   <td>51</td>
+   <td>无</td>
+   <td>无</td>
+   <td>156</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>每次攻击20%概率眩晕敌人1秒</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="野蛮人狼骑兵"><img alt="野蛮人狼骑兵" src="E7B2BEE99490E9878EE89BAEE4BABAE9AA91E585B5.png" width="60" height="60"></a><br><a title="小小军团野蛮人狼骑兵兵种图鉴">精锐野蛮人骑兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E699AEE9809A.jpg" width="40" height="40"></a><br>普通</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E99481E794B2.jpg" width="40" height="40"></a><br>锁甲</td>
+   <td>690</td>
+   <td>158</td>
+   <td>53</td>
+   <td>无</td>
+   <td>无</td>
+   <td>200</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>每次攻击20%概率眩晕敌人1秒</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="野蛮人狼骑兵"><img alt="野蛮人狼骑兵" src="E78999E78BBCE9AA91E5A3AB.png" width="60" height="60"></a><br><a title="小小军团野蛮人狼骑兵兵种图鉴">牙狼骑士</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E699AEE9809A.jpg" width="40" height="40"></a><br>普通</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E99481E794B2.jpg" width="40" height="40"></a><br>锁甲</td>
+   <td>698</td>
+   <td>172</td>
+   <td>53</td>
+   <td>无</td>
+   <td>无</td>
+   <td>200</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>野蛮血液：牙狼骑士每恢复当前生命值上限3%的血量，便提升3%攻击力，最多提升30%。</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="野蛮人狼骑兵"><img alt="野蛮人狼骑兵" src="E5BAA7E78BBCE9AA91E5A3AB.png" width="60" height="60"></a><br><a title="小小军团野蛮人狼骑兵兵种图鉴">座狼骑士</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E9878DE587BB.jpg" width="40" height="40"></a><br>重击</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E99481E794B2.jpg" width="40" height="40"></a><br>锁甲</td>
+   <td>736</td>
+   <td>163</td>
+   <td>55</td>
+   <td>无</td>
+   <td>无</td>
+   <td>200</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>强力震击：每次攻击20%%概率眩晕敌人1秒，并使被眩晕的目标在5秒内防御力下降15%，不可叠加。</td>
+  </tr>
+ </tbody>
+</table>
+<p><br></p>
+<h2><span class="mw-headline" id=".E9.87.8E.E8.9B.AE.E4.BA.BA.E6.AD.A5.E5.85.B5">野蛮人步兵</span></h2>
+<table class="wikitable" style="box-shadow: rgb(136, 136, 136) 2px 2px 3px;width:100%;text-align:center">
+ <tbody>
+  <tr>
+   <th style="background-color:#EED8AE;width:10%"><b>兵种名称</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>武器</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防具</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>生命</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防御</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>幸运</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>闪避</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>移动速度</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击范围</b></th>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="野蛮人步兵"><img alt="野蛮人步兵" src="E9878EE89BAEE4BABAE6ADA5E585B5.png" width="60" height="60"></a><br><a title="小小军团野蛮人步兵兵种图鉴">野蛮人步兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E699AEE9809A.jpg" width="40" height="40"></a><br>普通</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E79AAEE794B2.jpg" width="40" height="40"></a><br>皮甲</td>
+   <td>577</td>
+   <td>135</td>
+   <td>45</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>每次攻击25%概率把伤害的30%转成血量</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="野蛮人步兵"><img alt="野蛮人步兵" src="E7B2BEE99490E9878EE89BAEE4BABAE6ADA5E585B5.png" width="60" height="60"></a><br><a title="小小军团野蛮人步兵兵种图鉴">精锐野蛮人步兵</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E699AEE9809A.jpg" width="40" height="40"></a><br>普通</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E99481E794B2.jpg" width="40" height="40"></a><br>锁甲</td>
+   <td>601</td>
+   <td>142</td>
+   <td>48</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>每次攻击25%概率把伤害的30%转成血量</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="野蛮人步兵"><img alt="野蛮人步兵" src="E89BAEE88D92E7A28EE9AAA8E88085.png" width="60" height="60"></a><br><a title="小小军团野蛮人步兵兵种图鉴">蛮荒碎骨者</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E699AEE9809A.jpg" width="40" height="40"></a><br>普通</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E99481E794B2.jpg" width="40" height="40"></a><br>锁甲</td>
+   <td>638</td>
+   <td>145</td>
+   <td>51</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>每次攻击25%概率把伤害的50%转成血量</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="野蛮人步兵"><img alt="野蛮人步兵" src="E9BB91E9A285E68EA0E5A4BAE88085.png" width="60" height="60"></a><br><a title="小小军团野蛮人步兵兵种图鉴">黑颅掠夺者</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E699AEE9809A.jpg" width="40" height="40"></a><br>普通</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E8BDBBE794B2.jpg" width="40" height="40"></a><br>轻甲</td>
+   <td>609</td>
+   <td>152</td>
+   <td>49</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>巫毒：攻击时有25%概率使目标陷入中毒状态，每秒损失相当于士兵当前攻击力5%的血量，持续5秒，不可叠加。</td>
+  </tr>
+ </tbody>
+</table>
+<p><br></p>
+<h2><span class="mw-headline" id=".E9.87.8E.E8.9B.AE.E4.BA.BA.E5.BC.93.E7.AE.AD.E6.89.8B">野蛮人弓箭手</span></h2>
+<table class="wikitable" style="box-shadow: rgb(136, 136, 136) 2px 2px 3px;width:100%;text-align:center">
+ <tbody>
+  <tr>
+   <th style="background-color:#EED8AE;width:10%"><b>兵种名称</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>武器</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防具</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>生命</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防御</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>幸运</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>闪避</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>移动速度</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击范围</b></th>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="野蛮人弓箭手"><img alt="野蛮人弓箭手" src="E9878EE89BAEE4BABAE5BC93E7AEADE6898B.png" width="60" height="60"></a><br><a title="小小军团野蛮人狼骑兵兵种图鉴">野蛮人弓箭手</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E7AEADE5BCA9.jpg" width="40" height="40"></a><br>箭弩</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E697A0E794B2.jpg" width="40" height="40"></a><br>无甲</td>
+   <td>314</td>
+   <td>144</td>
+   <td>20</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>250</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>被敌人近身贴近后可以反击</td>
+  </tr>
+ </tbody>
+</table>
+<ul>
+ <li><b>点击武器及防具图标可跳转至攻防相性页面进行查看</b></li>
+</ul>
+<p><br></p>
+<h2><span class="mw-headline" id=".E8.9B.AE.E6.97.8F.E7.A5.AD.E5.8F.B8">蛮族祭司</span></h2>
+<table class="wikitable" style="box-shadow: rgb(136, 136, 136) 2px 2px 3px;width:100%;text-align:center">
+ <tbody>
+  <tr>
+   <th style="background-color:#EED8AE;width:10%"><b>兵种名称</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>武器</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防具</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>生命</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>防御</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>幸运</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>闪避</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>移动速度</b></th>
+   <th style="background-color:#EED8AE;width:10%"><b>攻击范围</b></th>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="蛮族祭司"><img alt="蛮族祭司" src="E89BAEE6978FE7A5ADE58FB8.png" width="60" height="60"></a><br><a title="小小军团蛮族祭司兵种图鉴">蛮族祭司</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E9AD94E6B395.jpg" width="40" height="40"></a><br>魔法</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E5B883E794B2.jpg" width="40" height="40"></a><br>布甲</td>
+   <td>448</td>
+   <td>195</td>
+   <td>45</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>250</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>振奋：每次命中后提升自身攻击力，若自身受到伤害则效果消失重新累计。</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="蛮族祭司"><img alt="蛮族祭司" src="E7B2BEE99490E89BAEE6978FE7A5ADE7A580.png" width="60" height="60"></a><br><a title="小小军团蛮族祭司兵种图鉴">精锐蛮族祭祀</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E9AD94E6B395.jpg" width="40" height="40"></a><br>魔法</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E5B883E794B2.jpg" width="40" height="40"></a><br>布甲</td>
+   <td>479</td>
+   <td>203</td>
+   <td>47</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>振奋：每次命中后提升自身1%的攻击力，最多提升20%，若自身受到伤害则效果消失重新累计。</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="蛮族祭司"><img alt="蛮族祭司" src="E890A8E6BBA1E7A5ADE58FB8.png" width="60" height="60"></a><br><a title="小小军团蛮族祭司兵种图鉴">萨满祭司</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E9AD94E6B395.jpg" width="40" height="40"></a><br>魔法</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E5B883E794B2.jpg" width="40" height="40"></a><br>布甲</td>
+   <td>487</td>
+   <td>219</td>
+   <td>48</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>振奋：每次命中后提升自身2%的攻击力，最多提升40%，若自身受到伤害则效果消失重新累计。</td>
+  </tr>
+  <tr>
+   <td rowspan="2"><a title="蛮族祭司"><img alt="蛮族祭司" src="E58DA0E58D9CE5B7ABE5B888.png" width="60" height="60"></a><br><a title="小小军团蛮族祭司兵种图鉴">占卜巫师</a></td>
+   <td><a title="攻击相性"><img alt="攻击相性" src="E9AD94E6B395.jpg" width="40" height="40"></a><br>魔法</td>
+   <td><a title="防具相性"><img alt="防具相性" src="E5B883E794B2.jpg" width="40" height="40"></a><br>布甲</td>
+   <td>503</td>
+   <td>211</td>
+   <td>50</td>
+   <td>无</td>
+   <td>无</td>
+   <td>65</td>
+   <td>近身</td>
+  </tr>
+  <tr>
+   <td style="text-align:left" colspan="9"><b>特殊技能：</b>爆甲：每次命中后减少目标2%的防御力，最多减少40%，若目标受到治疗则效果消失重新累计。</td>
+  </tr>
+ </tbody>
+</table>
+<!-- NewPP limit reportCPU time usage: 0.629 secondsReal time usage: 1.110 secondsPreprocessor visited node count: 1718/1000000Preprocessor generated node count: 4915/1000000Post‐expand include size: 100635/2097152 bytesTemplate argument size: 7666/2097152 bytesHighest expansion depth: 4/40Expensive parser function count: 0/100-->
+<!-- Transclusion expansion time report (%,ms,calls,template)100.00%  136.323      1 - -total 78.36%  106.826     12 - 模板:兵种列表模板 54.54%   74.345     12 - 模板:兵种表格模板 12.48%   17.008      1 - 模板:兵种列表模板2  7.41%   10.102      1 - 模板:兵种表格模板2  5.65%    7.706      1 - 模板:首页-->
+<!-- Saved in parser cache with key miniwarriorswiki:pcache:idhash:260-0!*!0!!zh-cn!5!* and timestamp 20160516084926 and revision id 4546 -->
+<input type="hidden" name="mytoken" id="mytoken" value="">
+<input type="hidden" name="pageId" id="pageId" value="">
+</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+    <title>小小军团排兵布阵分析</title>
+    <link href="../bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+<style>
+    body {
+        background: #e0e0e0;
+    }
+
+    .ttd {
+        background: #EED8AE;
+    }
+
+    td {
+        text-align: center;
+        background: #fff;
+    }
+
+    th {
+        text-align: center;
+    }
+
+    .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+        border: 1px solid #080808;
+    }
+
+    ul {
+        list-style: none;
+        padding: 8px;
+        text-align: center;
+    }
+
+    ul li {
+        float: left;
+        text-align: center;
+        list-style: none;
+        margin: 3px;
+    }
+
+    .life-div {
+        background: #956336;
+        border: 1px solid #431C04;
+        border-radius: 6px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        line-height: 24px;
+        color: #fff;
+    }
+
+    h3 {
+        margin-bottom: 0.3em;
+        border-bottom: 1px solid #d75330;
+        border-left: 0.4em solid #d75330;
+        padding-left: 0.5em;
+        color: #555;
+        margin-top: 5px;
+        height: 20px;
+        line-height: 20px;
+        clear: both;
+    }
+</style>
+<body style="color:#000;padding:10px;">
+<div id="mw-content-text" lang="zh-CN" dir="ltr" class="mw-content-ltr">
+    <p><br></p>
+<h2><span class="mw-headline" id=".E5.89.8D.E8.A8.80">前言</span></h2>
+<p>小小军团中什么资源最重要？ </p>
+<p>大部分刚入手游戏的萌新会回答：钻石！良将！材料！</p>
+<p>是的，以上都很重要，但是随着威望等级的提升，关卡进度的不断推进。这时候会发现金币成了唯一限制战力提升的关键因素。那么如何在有限的体力下获得更多的资源就成为了必须考虑的问题。</p>
+<p><br>小小军团中设定PVP对战“<font color="red">失败后同样扣除体力</font>”，而游戏AI关卡“<font color="blue">失败并不扣除体力</font>”。如何保证PVP遇到“钉子”时一次成功的高成功率就是本攻略所写目的。</p>
+<p>工欲善其事，必先利其器。如何选择将领，是否有些板凳英雄可以上时，我个人的意见是--------可以！喜欢什么将就上什么！（看到这里观众老爷们别生气！‘(*&gt;﹏&lt;*)′鸡蛋烂菜先留着，容我慢慢道来~）</p>
+<p>但是！为了保证能在PVP中纵横沙场，那么我们就必须了解小小军团的个个流派及“不可替代将领”。 </p>
+<p><br></p>
+<h2><span class="mw-headline" id=".E3.80.90.E6.8E.92.E5.85.B5.E7.AF.87.E3.80.91">【排兵篇】</span></h2>
+<h3><span class="mw-headline" id="1.E3.80.81.E6.B5.81.E6.B4.BE">1、流派</span></h3>
+<p><b>主要分为三系：</b>AOE、菜刀流、AOE与菜刀混搭，至于在这三系之上繁衍出的小羊流、奶妈教、复活流及点杀流等等。话说万变不离其宗只要了解主要的三系后就能随心所欲自己点将布阵，破阵杀敌了！</p>
+<p><br><b>AOE：</b></p>
+<p>以三星弓，三星火为核心辅以其他将领，运用前排拖延后排群伤的方式对敌人造成清扫式打击（由于菜刀抱团进攻的特性，较为克制菜刀流）</p>
+<p><br><b>菜刀流：</b></p>
+<p>以进程攻击部队为主，形成穿刺型攻击效果，直捣敌方核心输出部队（需长期熟练后才能把握，其主要将为：奥矛、黑矛、贞德、萨拉丁及其他近战小兵、骑兵等）</p>
+<p><br><b>AOE与菜刀混搭：</b></p>
+<p>当前主流，即可运用菜刀穿刺进入核心，攻击对方输出部队。也可以利用AOE清场的优势拉扯蚕食敌方，由于其灵活的变化性受到广大高玩亲觅。实战中常见的单边菜刀组合：<a title="萨拉丁">萨拉丁</a> <a title="伊格内修斯">奥矛</a> <a title="阿喀琉斯">黑矛</a> <a title="海叶森思">奶骑</a></p>
+<p><br></p>
+<h3><span class="mw-headline" id="2.E3.80.81.E2.80.9C.E4.B8.8D.E5.8F.AF.E6.9B.BF.E4.BB.A3.E5.B0.86.E9.A2.86.E2.80.9D">2、“不可替代将领”</span></h3>
+<p>（本篇中以PVP为主兼顾PVE为考虑，将领排序不分先后）</p>
+<p>复制法（<a title="喀耳刻">喀耳刻</a>）、羊法（<a title="贝尔斯">贝尔斯</a>）、沉默法（<a title="莫甘娜">莫甘娜</a>）、石头人（<a title="沙默斯">沙默斯</a>）、绿帽（<a title="罗宾汉">罗宾汉</a>）、<a title="萨齐">萨奇</a>、闪避弩（<a title="阿拉什">阿拉什</a>）、白盾（<a title="雷哈德">雷哈德</a>）、奶爸（<a title="腓里努斯">腓里努斯</a>）、苍蝇（<a title="特里姆">特里姆</a>）</p>
+<p><br>针对其中较为有争议的谈一下：</p>
+<p>娜娜作为核心之一，其一在于其高几率的技能释放，且由于其在针对苍蝇的时的不可替代性故考虑作为核心将领。（其克制一切主动技能将领的特性无可挑剔）在核心骨架的选取中舍弃了反盾、奥矛、黑矛。考虑到其虽优秀但并不是必定要上的情况故未列入。（反盾在PVP针对AOE时极为优秀，但有通过阵型设计可以防范）AOE流：在“不可替代将领”的基础上辅以三星弓及三星火枪！</p>
+<p><br>三星弓可选择1到3个，2个为宜（其中一个可以佩戴食人宝珠项链并把弓箭幸运提高到75以上，另一个可佩戴角斗士项链负责秒杀苍蝇，项链都为梅林关卡出品），如果没有梅林可考虑3个小弓。火枪根据横排的AOE选择填补，保证每一个横排被1到2个AOE覆盖，这样一个AOE阵型就基本成型了。在这里不可回避梅林与三星弓的比较，梅林的优势在于其优秀的法师兵种（弓近身不能反击）和梅林本身体制及技能的强力，但差异并不是大到无解的程度。大多数实际战力差异在5w以内钉子都是可以拔出的，在这里指出一种“强钉”，即在AOE中添置1到2个小羊法，这种类型如在战力差异3w以上且阵型设计良好，这时候我们需明智地选择放弃以节省体力。菜刀流：同样是在“不可替代将领”的基础上辅以奥矛、黑矛、贞德、萨拉丁及其他近战小兵、骑兵等，如：沙佐、黑骑、查理大帝、奶骑、坎农、斯巴达、吴大伟、高文、基佬、晕眩骑、熙德等等都是可选辅将。</p>
+<p><br>菜刀流的核心是在于合理的运用士气杂兵（民兵、忍者、胖子）拉扯敌方AOE、在苍蝇的掩护下利用回血、迷雾、炸弹迅速穿入歼灭敌方核心，扫清对自身威胁最大的AOE后安心收尾，需要长期的练习才能解读出对方薄弱环节。</p>
+<p><br>混搭流：兼顾了AOE与菜刀的特点，在“不可替代将领”的基础上辅以奥矛、黑矛、萨拉丁、火枪、奶骑等。值得一谈的是1.85版本中流行至今的单边菜刀。</p>
+<p><br>即 萨拉丁、奥矛、黑矛、奶骑，及1.9版本后流行的 萨拉丁、羊法、船长、坎农（目前晕眩骑大有代替坎农的趋势）</p>
+<p><br></p>
+<p>谈到这里，排兵篇告于段落。希望对各位在选将，自己布阵有所帮助。将的选择以个人来看除核心将不可替代外，其余各种将领相互间搭配会有奇妙的效果，不用拘泥于强势将就必上的原则‘　(○^～^○)，了解自己所上将领的优势及组合搭配间的效应可起到出奇制胜的效果。</p>
+<p><br></p>
+<h2><span class="mw-headline" id=".E3.80.90.E5.B8.83.E9.98.B5.E7.AF.87.E3.80.91">【布阵篇】</span></h2>
+<p>将领的选择上可以有较大的浮动，但如何破解敌方阵容就需要认真解读“钉子阵”</p>
+<p>首先让我们了解下小小军团战斗时的逻辑，逻辑分为两种：</p>
+<p>1、横排逻辑（即兵种优先攻击横排的敌人，在没有横排敌人后才会攻击两侧最近敌人，主要为近战及火枪方队）</p>
+<p>2、环形逻辑（以自己为圆心，攻击一切攻击范围半径中较近的敌人，主要为法师及弓弩方队）</p>
+<p><br>解读一个阵，如何进攻需要找到对方最主要的几个“爆破点”，一般为：苍蝇、梅林、黑矛、反盾、AOE（三星弓、萨奇及三星火）、闪避弩、爆头姐、复制法、查理大帝。</p>
+<p><br><b>苍蝇（重中之重！ &gt;_ &lt;&nbsp;?---横排逻辑）：</b>苍蝇由于其召唤出的火龙无敌的血量，极致的防御一度成为无敌的存在，是低战吊打高战的不二法门。如何破解之，前文提到过角斗士项链由于其30%几率秒杀小兵的属性，可以用一个弓箭或则绿帽佩戴防守苍蝇的后袭。羊法、绿帽的标记，以及弩兵进阶成重弩兵都是强势硬杀火龙的方法。</p>
+<p><br>但是，这些都不是最优处理苍蝇最好的选择。进攻时也意味你在防守，敌方同样可以运用这种方式破解你得火龙，火龙的伤害承受数据依旧高居榜首。这里提到的最好的破解方式，就是利用苍蝇横排的逻辑，放空敌方苍蝇对位的这一路，即在我方最后一排只放置一队进程兵（如对方苍蝇一路无近战，可完全放空），这时候敌方苍蝇会一直往前移动，直到与我方第一排兵平行时才会攻击。此时利用其进入娜娜的封魔范围沉默，由于苍蝇在这样情况下毫无站位优势很快就会被各种“流失”击中身亡^_^。</p>
+<p><br></p>
+<h3><span class="mw-headline" id=".E4.BB.A5.E4.B8.8B.E5.88.97.E7.BB.84.E5.9B.BE.E4.B8.BA.E5.AE.9E.E4.BE.8B">以下列组图为实例</span></h3>
+<ul>
+ <li>首先让我们来感受下强杀苍蝇（利用角斗士项链强杀苍蝇）</li>
+</ul>
+<p><br><a class="image"><img alt="萌新进阶之排兵布阵.jpg" src="E8908CE696B0E8BF9BE998B6E4B98BE68E92E585B5E5B883E998B5.jpg" width="400" height="251" srcset="http://joymepic.joyme.com/wiki/images/miniwarriors/3/3a/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B5.jpg?imageView/1/w/600/h/377/v=201604180638 1.5x, http://joymepic.joyme.com/wiki/images/miniwarriors/3/3a/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B5.jpg?imageView/1/w/800/h/503/v=201604180638 2x"></a></p>
+<p><a class="image"><img alt="萌新进阶之排兵布阵1.jpg" src="E8908CE696B0E8BF9BE998B6E4B98BE68E92E585B5E5B883E998B51.jpg" width="400" height="228" srcset="http://joymepic.joyme.com/wiki/images/miniwarriors/7/7c/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B51.jpg?imageView/1/w/600/h/342/v=201604180638 1.5x, http://joymepic.joyme.com/wiki/images/miniwarriors/7/7c/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B51.jpg?imageView/1/w/800/h/456/v=201604180638 2x"></a></p>
+<p><br>可以看出虽然苍蝇已无平时出彩的场场百万数据，但是近90w的数据依旧稳坐英雄承伤榜首！</p>
+<p><br></p>
+<ul>
+ <li>那么下面我们就利用苍蝇的横排逻辑的特性来进行处理吧</li>
+</ul>
+<p><b>实例1</b></p>
+<p><br><a class="image"><img alt="萌新进阶之排兵布阵2.jpg" src="E8908CE696B0E8BF9BE998B6E4B98BE68E92E585B5E5B883E998B52.jpg" width="400" height="241" srcset="http://joymepic.joyme.com/wiki/images/miniwarriors/6/69/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B52.jpg?imageView/1/w/600/h/362/v=201604180638 1.5x, http://joymepic.joyme.com/wiki/images/miniwarriors/6/69/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B52.jpg?imageView/1/w/800/h/482/v=201604180638 2x"></a></p>
+<p><br>红色方框为制造的引导苍蝇进入娜娜封魔所必要的凹槽，箭头为兵种逻辑的进攻方式，方便观察予以标示。</p>
+<p><br><a class="image"><img alt="萌新进阶之排兵布阵3.jpg" src="E8908CE696B0E8BF9BE998B6E4B98BE68E92E585B5E5B883E998B53.jpg" width="400" height="226" srcset="http://joymepic.joyme.com/wiki/images/miniwarriors/1/1b/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B53.jpg?imageView/1/w/600/h/340/v=201604180638 1.5x, http://joymepic.joyme.com/wiki/images/miniwarriors/1/1b/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B53.jpg?imageView/1/w/800/h/453/v=201604180638 2x"></a></p>
+<p><br>可以观察到上图中35秒时，娜娜将对方苍蝇及萨奇进行封魔。</p>
+<p><br><a class="image"><img alt="萌新进阶之排兵布阵4.jpg" src="E8908CE696B0E8BF9BE998B6E4B98BE68E92E585B5E5B883E998B54.jpg" width="400" height="225" srcset="http://joymepic.joyme.com/wiki/images/miniwarriors/a/ae/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B54.jpg?imageView/1/w/600/h/338/v=201604180638 1.5x, http://joymepic.joyme.com/wiki/images/miniwarriors/a/ae/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B54.jpg?imageView/1/w/800/h/450/v=201604180638 2x"></a></p>
+<p><br>o_O???和第一次强杀苍蝇承伤90w比较，仅仅22w承伤的苍蝇无足畏惧！</p>
+<p><br><b>实例2</b></p>
+<p><a class="image"><img alt="萌新进阶之排兵布阵5.jpg" src="E8908CE696B0E8BF9BE998B6E4B98BE68E92E585B5E5B883E998B55.jpg" width="400" height="240" srcset="http://joymepic.joyme.com/wiki/images/miniwarriors/c/c6/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B55.jpg?imageView/1/w/600/h/361/v=201604180638 1.5x, http://joymepic.joyme.com/wiki/images/miniwarriors/c/c6/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B55.jpg?imageView/1/w/800/h/481/v=201604180638 2x"></a></p>
+<p>上图红色区域为人工制造的凹陷，以引导对方横排逻辑的苍蝇进入娜娜射程范围。同时需要注意：梅林为环形逻辑兵种，反射盾和苍蝇同排，引导苍蝇进入娜娜封魔技能范围的同时也让反盾进入我军腹地。避免梅林优先锁定对方反盾（三星弓同理）故内凹让闪避前置，以凹陷区域上方羊法、复制、娜娜的法师小队平A解决反盾。（设计结束，让我们看看实战效果）</p>
+<p><br><a class="image"><img alt="萌新进阶之排兵布阵6.jpg" src="E8908CE696B0E8BF9BE998B6E4B98BE68E92E585B5E5B883E998B56.jpg" width="400" height="228" srcset="http://joymepic.joyme.com/wiki/images/miniwarriors/8/86/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B56.jpg?imageView/1/w/600/h/342/v=201604180638 1.5x, http://joymepic.joyme.com/wiki/images/miniwarriors/8/86/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B56.jpg?imageView/1/w/800/h/456/v=201604180638 2x"></a></p>
+<p><br>（ˇ＾ˇ〉上图可以看出苍蝇仅仅承担了13.5w的伤害，用娜娜阉割后的苍蝇已难以稳坐承伤榜首。</p>
+<p>梅林、萨奇、三星弓及三星火：针对AOE最好的方式就是利用反盾直接秒杀，利用反盾直接对位敌方AOE并覆盖迷雾，让敌将使用AOE技能后直接反射秒杀。需注意反盾后不可跟进任何近战部队。</p>
+<p><br>另一种方式，就是在开局利用士气杂兵拉扯对方AOE 使用苍蝇接战召唤出的火龙拉扯对方AOE输出，需要在火龙空档中用杂兵补位勾引。特别强调的是萨奇和三星小火是横排逻辑，士气及火龙必须在同一横排时才能勾引其火力输出，而梅林，三星弓属环形逻辑，很容易就会被仍在萨奇或小火前的民兵吸引。</p>
+<p><br><b>黑矛：</b>这个方队需要注意，由于是尖兵，有时候一不留神就会被其</p>
+<p><br>捅穿前排，造成后排AOE直面矛兵小队。开场可用民兵直接扔其前面勾引，使用萨奇，羊法或三星火对位清理。这里针对奥矛与黑矛搞基组合（如单边菜刀：萨拉丁、奥矛、黑矛、奶骑）提供四种稳定解决方式：</p>
+<p>1、<b>对位：</b>萨拉丁、羊法、火枪、奥矛，开局直接民兵拉扯住其中一队矛兵，利用一回血两炸清理。</p>
+<p>2、<b>对位：</b>石头人、羊法、萨奇（小火）、复制法 利用一回血三炸清理 </p>
+<p>3、<b>对位：</b>石头、羊法、萨奇（小火）、苍蝇，开局直接民兵拉扯住其中一队矛兵，利用苍蝇召唤的火龙拉住敌方双矛部队，一回血两炸清理。</p>
+<p>4、大表哥（坎特洛）、AOE（萨7、梅林或小火都可）、羊法、石头人，一回血即可。由于这个版本出现的大表哥（新狼骑，坎农的表哥O (∩_∩)O~）完全可以说是抱团菜刀的杀手。其效果出奇的优秀！</p>
+<p><br><b>反盾：</b>注意让己方AOE远离该部队，如己方是AOE流也可以舍弃三星火或三星弓保全梅林及萨奇。比较好的方法是用羊法对位辅以法师方队清理。</p>
+<p><b>闪避弩：</b>注意观察闪避弩附近是否处于AOE的保护范围。如没有AOE覆盖，或可以利用士气杂兵保护黑矛部队逼近闪避弩的，优先利用黑矛对位。也可以用AOE对位清理。</p>
+<p><b>爆头姐：</b>爆头装备夜幕的情况下，开局前45秒40%暴击致死率，其抽筋爆发后及其恐怖。最好利用石头人和娜娜对位，后排输出跟进迅速清理。</p>
+<p><b>复制法：</b>复制法的搅屎棍特性也是一个不定因素。利用娜娜对位，减少其复制效率是不错的选择。</p>
+<p><b>查理大帝：</b>和复制法一样，由于其突然召唤一队骑兵会造成本方队伍近战选择混乱。最好的方式利用爆头姐对位秒杀，娜娜和复制法对位也有奇效。</p>
+<p><br>围绕核心“爆破点”并根据兵种克制规律排布己方阵型，有针对性的布置。就可以在PVP遇到强力对手时，无往而不利！</p>
+<p><br>由于实战拔钉(￣▽￣*)，作者本人大号仓促之间难以提供良好素材( T___T ) ~~，故用渣号根据攻略对位方式提供实例</p>
+<p><br><a class="image"><img alt="萌新进阶之排兵布阵7.jpg" src="E8908CE696B0E8BF9BE998B6E4B98BE68E92E585B5E5B883E998B57.jpg" width="400" height="228" srcset="http://joymepic.joyme.com/wiki/images/miniwarriors/2/2b/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B57.jpg?imageView/1/w/600/h/342/v=201604180638 1.5x, http://joymepic.joyme.com/wiki/images/miniwarriors/2/2b/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B57.jpg?imageView/1/w/800/h/456/v=201604180638 2x"></a></p>
+<p><a class="image"><img alt="萌新进阶之排兵布阵8.jpg" src="E8908CE696B0E8BF9BE998B6E4B98BE68E92E585B5E5B883E998B58.jpg" width="400" height="225" srcset="http://joymepic.joyme.com/wiki/images/miniwarriors/d/d2/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B58.jpg?imageView/1/w/600/h/339/v=201604180638 1.5x, http://joymepic.joyme.com/wiki/images/miniwarriors/d/d2/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B58.jpg?imageView/1/w/800/h/451/v=201604180638 2x"></a></p>
+<p><a class="image"><img alt="萌新进阶之排兵布阵9.jpg" src="E8908CE696B0E8BF9BE998B6E4B98BE68E92E585B5E5B883E998B59.jpg" width="400" height="225" srcset="http://joymepic.joyme.com/wiki/images/miniwarriors/4/4b/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B59.jpg?imageView/1/w/600/h/338/v=201604180638 1.5x, http://joymepic.joyme.com/wiki/images/miniwarriors/4/4b/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B59.jpg?imageView/1/w/800/h/450/v=201604180638 2x"></a></p>
+<p><a class="image"><img alt="萌新进阶之排兵布阵10.jpg" src="E8908CE696B0E8BF9BE998B6E4B98BE68E92E585B5E5B883E998B510.jpg" width="400" height="225" srcset="http://joymepic.joyme.com/wiki/images/miniwarriors/a/a7/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B510.jpg?imageView/1/w/600/h/338/v=201604180638 1.5x, http://joymepic.joyme.com/wiki/images/miniwarriors/a/a7/%E8%90%8C%E6%96%B0%E8%BF%9B%E9%98%B6%E4%B9%8B%E6%8E%92%E5%85%B5%E5%B8%83%E9%98%B510.jpg?imageView/1/w/800/h/451/v=201604180638 2x"></a></p>
+<!-- NewPP limit reportCPU time usage: 0.059 secondsReal time usage: 0.162 secondsPreprocessor visited node count: 33/1000000Preprocessor generated node count: 54/1000000Post‐expand include size: 189/2097152 bytesTemplate argument size: 0/2097152 bytesHighest expansion depth: 2/40Expensive parser function count: 0/100-->
+<!-- Transclusion expansion time report (%,ms,calls,template)100.00%    5.098      1 - -total100.00%    5.098      1 - 模板:首页-->
+<!-- Saved in parser cache with key miniwarriorswiki:pcache:idhash:1677-0!*!0!!zh-cn!5!* and timestamp 20160417223859 and revision id 5351 -->
+<input type="hidden" name="mytoken" id="mytoken" value="">
+<input type="hidden" name="pageId" id="pageId" value="">
+</div>
+</body>
+</html>
